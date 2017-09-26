@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>LedMax</title>
+
+    <meta name="description" content="Title" /><!-- Description of the page -->
+    <meta name="author" content="Shpikovskaya Olesya"><!-- Author Name -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"><!-- Bootstrap Style -->
+    <link rel="stylesheet" href="css/font-awesome.min.css"><!-- Custom Style -->
+    <link rel="stylesheet" href="css/slick.css"><!-- Slick Style -->
+    <link rel="stylesheet" href="css/slick-theme.css"><!-- Slick Style -->
+    <link rel="stylesheet" href="css/style.css"><!-- Custom Style -->
+</head>
+<body>
+<!--MODAL WINDOW - ORDER CALL-->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" id="cls_search_1" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Мы перезвоним вам</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inp_FIO" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="inp_email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="inp_phone" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-default">отправить</button>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--END MODAL WINDOW - ORDER CALL-->
+    <!--HEADER-->
+    <header class="header">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="h_logo">
+                            <a class="" href="#">
+                                <img src="img/index/h_logo.png" alt="" class="logo_h_img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-4">
+                        <div class="h_contacts">
+                            <div class="phone">
+                                <a href="tel:+79277130148">
+                                    <img src="img/index/h_call.png" alt="">
+                                    <p>
+                                        +7 (927) <span class="bld">713-01-48</span>
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="address">
+                                г. Самара, улица Ново-садовая 389 'А'
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div class="h_csb">
+                            <div class="order_call">
+                                <button type="button" class="btn_call" data-toggle="modal" data-target="#myModal">заказать звонок</button>
+                            </div>
+                            <div class="form_search">
+                                <form class="navbar-form navbar-left">
+                                <div id="frm_serch" class="form-group">
+                                    <button type="button" id="cls_search" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <input type="text" class="form-control" placeholder="Найти">
+                                    <button type="button" class="btn_send">отправить</button>
+                                </div>
+                                <button id="btn_search" type="button" class="btn btn-default">
+                                    <img src="img/index/h_search.png" alt="">
+                                </button>
+                            </form>
+                            </div>
+                            <div class="h_basket clearfix">
+                                <img src="img/index/h_backet.png" alt="">
+                                <span class="number">21</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header_middle">
+            <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Каталог</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Фароискатели</a></li>
+                                <li><a href="#">Ксенон</a></li>
+                                <li><a href="#">Ходовые огни</a></li>
+                                <li><a href="#">Автолампы</a></li>
+                                <li><a href="#">Пятая строчка</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">О магазине</a></li>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">ФОТОГАЛЕРЕЯ</a></li>
+                        <li><a href="#">Оплата</a></li>
+                        <li><a href="#">Контакты</a></li>
+
+                    </ul>
+
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        </div>
+    </header>
+    <!--HEADER END-->
+
+    <!--MAIN BEGIN-->
+    <main>
+        <div class="container">
+            <div class="small_menu">
+                <div class="row hidden-xs hidden-sm">
+                    <div class="col-md-12">
+                        <div class="sml_menu">
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_01.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">СВЕТОДИОДНЫЕ
+                                    ФАРЫ</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_02.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">СВЕТОДИОДНЫЕ
+                                    БАЛКИ</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_03.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">Светодиодные
+                                    лампы</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_04.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">Галогеновые
+                                    автолампы</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_05.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">КСЕНОН</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row hidden-xs hidden-sm">
+                    <div class="col-md-12">
+                        <div class="sml_menu">
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_06.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">Противотуманные
+                                    фары</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Фароискатели</a></li>
+                                        <li><a href="#">Ксенон</a></li>
+                                        <li><a href="#">Ходовые огни</a></li>
+                                        <li><a href="#">Автолампы</a></li>
+                                        <li><a href="#">Пятая строчка</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_07.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">дневные
+                                    ходовые огни</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_08.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">фароискатели</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_09.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">Сигналы</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_010.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#"> Спецсигналы</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row visible-xs visible-sm">
+
+                        <div class="hidden_block">
+                            <div class="col-xs-6">
+                                <div class="sml_menu_block">
+                                    <div class="sml_img">
+                                        <img src="img/index/hb_img_01.png" alt="">
+                                    </div>
+                                    <div class="sml_txt">
+                                        <a href="#">СВЕТОДИОДНЫЕ
+                                            ФАРЫ</a>
+                                    </div>
+                                    <div class="sml_menu_hover">
+                                        <ul>
+                                            <li><a href="#">Пункт 1</a></li>
+                                            <li><a href="#">Пункт 2</a></li>
+                                            <li><a href="#">Пункт 3</a></li>
+                                            <li><a href="#">Пункт 4</a></li>
+                                            <li><a href="#">Пункт 5</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="sml_menu_block">
+                                    <div class="sml_img">
+                                        <img src="img/index/hb_img_02.png" alt="">
+                                    </div>
+                                    <div class="sml_txt">
+                                        <a href="#">СВЕТОДИОДНЫЕ
+                                            БАЛКИ</a>
+                                    </div>
+                                    <div class="sml_menu_hover">
+                                        <ul>
+                                            <li><a href="#">Пункт 1</a></li>
+                                            <li><a href="#">Пункт 2</a></li>
+                                            <li><a href="#">Пункт 3</a></li>
+                                            <li><a href="#">Пункт 4</a></li>
+                                            <li><a href="#">Пункт 5</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_03.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">Светодиодные
+                                        лампы</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xs-6">
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_04.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">Галогеновые
+                                        автолампы</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xs-6">
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_05.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">КСЕНОН</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xs-6">
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_06.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">Противотуманные
+                                        фары</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Фароискатели</a></li>
+                                        <li><a href="#">Ксенон</a></li>
+                                        <li><a href="#">Ходовые огни</a></li>
+                                        <li><a href="#">Автолампы</a></li>
+                                        <li><a href="#">Пятая строчка</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xs-6">
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_07.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">дневные
+                                        ходовые огни</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xs-6">
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_08.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">фароискатели</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xs-6">
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_09.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#">Сигналы</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-xs-6">
+                            <div class="sml_menu_block">
+                                <div class="sml_img">
+                                    <img src="img/index/hb_img_010.png" alt="">
+                                </div>
+                                <div class="sml_txt">
+                                    <a href="#"> Спецсигналы</a>
+                                </div>
+                                <div class="sml_menu_hover">
+                                    <ul>
+                                        <li><a href="#">Пункт 1</a></li>
+                                        <li><a href="#">Пункт 2</a></li>
+                                        <li><a href="#">Пункт 3</a></li>
+                                        <li><a href="#">Пункт 4</a></li>
+                                        <li><a href="#">Пункт 5</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <h2 class="product_h2">последние <span>поступления</span></h2>
+                <div class="sl_01">
+                    <div class="sl_01_slider">
+                        <div class="sl_01_img">
+                            <img src="img/index/last_01.jpg" alt="">
+                        </div>
+                        <div class="sl_01_content">
+                            <div class="sl_header">
+                                Противотуманные фары LED
+                                универсальные
+                            </div>
+                            <div class="sl_price_last">
+                                5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="sl_price_now">
+                                6200 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="in_basket">
+                                <button type="button" class="btn_in_basket">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sl_01_slider">
+                        <div class="sl_01_img">
+                            <img src="img/index/last_02.jpg" alt="">
+                        </div>
+                        <div class="marker_n">Новинка</div>
+                        <div class="sl_01_content">
+                            <div class="sl_header">
+                                Фара противотуманная
+                                Wesem HO3.17467
+                            </div>
+                            <div class="sl_price_last">
+                                5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="sl_price_now">
+                                5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="in_basket">
+                                <button type="button" class="btn_in_basket">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sl_01_slider">
+                        <div class="sl_01_img">
+                            <img src="img/index/last_03.jpg" alt="">
+                        </div>
+                        <div class="marker_a">Акция</div>
+                        <div class="sl_01_content">
+                            <div class="sl_header">
+                                Фара противотуманная
+                                DLAA LA 1617 W
+                            </div>
+                            <div class="sl_price_last">
+                                5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="sl_price_now">
+                                8100 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="in_basket">
+                                <button type="button" class="btn_in_basket">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sl_01_slider">
+                        <div class="sl_01_img">
+                            <img src="img/index/last_01.jpg" alt="">
+                        </div>
+                        <div class="sl_01_content">
+                            <div class="sl_header">
+                                Противотуманные фары LED
+                                универсальные
+                            </div>
+                            <div class="sl_price_last">
+                                5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="sl_price_now">
+                                6200 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="in_basket">
+                                <button type="button" class="btn_in_basket">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sl_01_slider">
+                        <div class="sl_01_img">
+                            <img src="img/index/last_02.jpg" alt="">
+                        </div>
+                        <div class="sl_01_content">
+                            <div class="sl_header">
+                                Фара противотуманная
+                                Wesem HO3.17467
+                            </div>
+                            <div class="sl_price_last">
+                                5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="sl_price_now">
+                                5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="in_basket">
+                                <button type="button" class="btn_in_basket">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sl_01_slider">
+                        <div class="sl_01_img">
+                            <img src="img/index/last_03.jpg" alt="">
+                        </div>
+                        <div class="sl_01_content">
+                            <div class="sl_header">
+                                Фара противотуманная
+                                DLAA LA 1617 W
+                            </div>
+                            <div class="sl_price_last">
+                                5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="sl_price_now">
+                                8100 <i class="fa fa-rub" aria-hidden="true"></i>
+                            </div>
+                            <div class="in_basket">
+                                <button type="button" class="btn_in_basket">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="index_look_catalog clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-9 col-sm-7 col-md-6">
+                        <h3>Огромный выбор
+                            <span>светодиодных</span> ламп
+                        </h3>
+                        <button type="button" class="btn_look">Смотреть каталог</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="sale_block clearfix">
+                    <h2 class="product_h2">распродажа</h2>
+                    <div class="sl_01">
+                        <div class="sl_01_slider">
+                            <div class="sl_01_img">
+                                <img src="img/index/last_01.jpg" alt="">
+                            </div>
+                            <div class="sl_01_content">
+                                <div class="sl_header">
+                                    Противотуманные фары LED
+                                    универсальные
+                                </div>
+                                <div class="sl_price_last">
+                                    5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="sl_price_now">
+                                    6200 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="in_basket">
+                                    <button type="button" class="btn_in_basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sl_01_slider">
+                            <div class="sl_01_img">
+                                <img src="img/index/last_02.jpg" alt="">
+                            </div>
+                            <div class="marker_hit">Хит продаж</div>
+                            <div class="sl_01_content">
+                                <div class="sl_header">
+                                    Фара противотуманная
+                                    Wesem HO3.17467
+                                </div>
+                                <div class="sl_price_last">
+                                    5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="sl_price_now">
+                                    5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="in_basket">
+                                    <button type="button" class="btn_in_basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sl_01_slider">
+                            <div class="sl_01_img">
+                                <img src="img/index/last_03.jpg" alt="">
+                            </div>
+                            <div class="sl_01_content">
+                                <div class="sl_header">
+                                    Фара противотуманная
+                                    DLAA LA 1617 W
+                                </div>
+                                <div class="sl_price_last">
+                                    5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="sl_price_now">
+                                    8100 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="in_basket">
+                                    <button type="button" class="btn_in_basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sl_01_slider">
+                            <div class="sl_01_img">
+                                <img src="img/index/last_01.jpg" alt="">
+                            </div>
+                            <div class="sl_01_content">
+                                <div class="sl_header">
+                                    Противотуманные фары LED
+                                    универсальные
+                                </div>
+                                <div class="sl_price_last">
+                                    5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="sl_price_now">
+                                    6200 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="in_basket">
+                                    <button type="button" class="btn_in_basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sl_01_slider">
+                            <div class="sl_01_img">
+                                <img src="img/index/last_02.jpg" alt="">
+                            </div>
+                            <div class="sl_01_content">
+                                <div class="sl_header">
+                                    Фара противотуманная
+                                    Wesem HO3.17467
+                                </div>
+                                <div class="sl_price_last">
+                                    5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="sl_price_now">
+                                    5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="in_basket">
+                                    <button type="button" class="btn_in_basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sl_01_slider">
+                            <div class="sl_01_img">
+                                <img src="img/index/last_03.jpg" alt="">
+                            </div>
+                            <div class="sl_01_content">
+                                <div class="sl_header">
+                                    Фара противотуманная
+                                    DLAA LA 1617 W
+                                </div>
+                                <div class="sl_price_last">
+                                    5800 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="sl_price_now">
+                                    8100 <i class="fa fa-rub" aria-hidden="true"></i>
+                                </div>
+                                <div class="in_basket">
+                                    <button type="button" class="btn_in_basket">В корзину</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="index_look_catalog ilc_bg clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-9 col-sm-7 col-md-6">
+                        <h3>Огромный выбор
+                            <span>светодиодных</span> ламп
+                        </h3>
+                        <button type="button" class="btn_look">Смотреть каталог</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular_block">
+            <div class="container">
+                <div class="row">
+                    <div class="sale_block clearfix">
+                        <h2 class="product_h2">популярные <span>производителя</span></h2>
+                        <div class="sl_03">
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_03.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_04.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_05.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_06.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_07.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_08.png" alt="">
+                                </div>
+                            </div>
+
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_01.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_02.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_03.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_04.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_05.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_06.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_07.png" alt="">
+                                </div>
+                            </div>
+                            <div class="sl_01_slider">
+                                <div class="sl_01_img">
+                                    <img src="img/index/logos_08.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="last_news">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>последние новости</h2>
+                    <button type="button" class="btn_look_all">Смотреть все</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="lnb_cont clearfix">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="last_new_block">
+                            <div class="ln_img">
+                                <img src="img/index/news_01.jpg" alt="">
+                            </div>
+                            <div class="ln_content">
+                                <div class="ln_header">
+                                    Главная Распродажа
+                                    Года – Скидки на все до -60%!
+                                </div>
+                                <div class="ln_date">
+                                    <p>09.12.2016</p>
+                                </div>
+                                <div class="ln_txt">
+                                    <p>
+                                        Приглашаем  всех автомобилистов на  главную распродажу года  - Ночь скидок в «База Автозвука», которая состоится  в но...
+                                        <!--Больше информации тут https://avtozvuk.ua/#ixzz4TiGSIUWa-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="last_new_block">
+                            <div class="ln_img">
+                                <img src="img/index/news_02.jpg" alt="">
+                            </div>
+                            <div class="ln_content">
+                                <div class="ln_header">
+                                    Обзор светодиодных ламп
+                                    ALED 20W
+                                </div>
+                                <div class="ln_date">
+                                    <p>09.12.2016</p>
+                                </div>
+                                <div class="ln_txt">
+                                    <p>
+                                        На наш очередной тест попали компактные светодиодные лампы от компании ALED, которые имеют...
+                                        яркость 4100 lumen...
+                                        <!--Больше информации тут https://avtozvuk.ua/#ixzz4TiRw3hJK-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="last_new_block">
+                            <div class="ln_img">
+                                <img src="img/index/news_03.jpg" alt="">
+                            </div>
+                            <div class="ln_content">
+                                <div class="ln_header">
+                                    Обзор ксенона Prolumen
+                                </div>
+                                <div class="ln_date">
+                                    <p>09.12.2016</p>
+                                </div>
+                                <div class="ln_txt">
+                                    <p>
+                                        После нескольких тестов светодиодных и ксеноновых ламп, поиски “святого грааля” автомобильного света привели нас..
+                                        к комплекту ксенона от компании Prolumen....
+                                        <!--Больше информации тут https://avtozvuk.ua/#ixzz4TiS2o1LN-->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div id="map" class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2386.7333418343487!2d50.21183981621113!3d53.258478879960684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4166191ca27b620b%3A0x698f6542e0acec80!2z0YPQuy4g0J3QvtCy0L4t0KHQsNC00L7QstCw0Y8sIDM4OdCQLCDQodCw0LzQsNGA0LAsINCh0LDQvNCw0YDRgdC60LDRjyDQvtCx0LsuLCA0NDMwMzE!5e0!3m2!1sru!2sru!4v1492517031833" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </main>
+    <!--MAIN END-->
+
+    <!--FOOTER BEGIN-->
+    <footer class = "footer clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-4">
+                    <div class="f_logo">
+                        <img src="img/index/h_logo.png" alt="">
+                    </div>
+                    <p class="logo_txt">
+                        автосвет и автоаксессуары
+                    </p>
+                    <p class="f_address">
+                        2017 г. Самара - Все права защищены
+                    </p>
+                </div>
+                <div class="col-sm-3 col-md-2 no_pl_pr">
+                    <div class="f_menu">
+                        <ul>
+                            <li><a href="#">Светодиодные фары</a></li>
+                            <li><a href="#">Светодиодные балки</a></li>
+                            <li><a href="#">Светодиодные лампы</a></li>
+                            <li><a href="#">Галогеновые автолампы</a></li>
+                            <li><a href="#">Ксенон</a></li>
+                            <li><a href="#">Противотуманые фары</a></li>
+                            <li><a href="#">Дневные ходовые огни</a></li>
+                            <li><a href="#">Фароискатели</a></li>
+                            <li><a href="#">Сигналы</a></li>
+                            <li><a href="#">Спецсигналы</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 no_pl">
+                    <div class="h_contacts">
+                        <div class="phone">
+                            <a href="tel:+79277130148">
+                                <img src="img/index/h_call.png" alt="">
+                                <p>
+                                    +7 (927) <span class="bld">713-01-48</span>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="address">
+                            г. Самара, улица Ново-садовая 389 'А'
+                        </div>
+                    </div>
+                    <div class="social_block">
+                        <div class="soc">
+                            <a href="#">
+                                <img src="img/index/fb.png" alt="">
+                            </a>
+                        </div>
+                        <div class="soc">
+                            <a href="#">
+                                <img src="img/index/vk.png" alt="">
+                            </a>
+                        </div>
+                        <div class="soc">
+                            <a href="#">
+                                <img src="img/index/yt.png" alt="">
+                            </a>
+                        </div>
+                        <div class="soc">
+                            <a href="#">
+                                <img src="img/index/inst.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="f_time">
+                        <p>с 10:00 до 20:00 без выходных</p>
+                    </div>
+                    <div class="order_call">
+                        <button type="button" class="btn_call" data-toggle="modal" data-target="#myModal">заказать звонок</button>
+                    </div>
+                    <div class="slon_img">
+                        <a href="#">
+                            <img src="img/index/logo-slon.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--FOOTER END-->
+
+    <script src="js/jquery.min.js"></script><!-- Jquery Library -->
+    <script src="js/bootstrap.min.js"></script><!-- Bootstrap Library -->
+    <script src="js/slick.min.js"></script><!-- Macked Input Library -->
+    <script src="js/app.js"></script><!-- Custom Library -->
+</body>
+</html>

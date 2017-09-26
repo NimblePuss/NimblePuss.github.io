@@ -1,0 +1,1015 @@
+//FONTS BEGIN
+=font-face($family, $path, $weight: normal, $style: normal)
+	@font-face
+		font-family: $family
+		src: url('#{$path}.eot')
+		src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg#') format('svg')
+		font-weight: $weight
+		font-style: $style
+
++font-face('Muller_r', '../fonts/Fontfabric - MullerRegular')
++font-face('Muller_l', '../fonts/Fontfabric - MullerLight')
++font-face('Muller_b', '../fonts/Fontfabric - MullerBold')
++font-face('Muller_m', '../fonts/Fontfabric - MullerMedium')
+=Muller-r
+	font-family: 'Muller_r', arial
+=Muller-l
+	font-family: 'Muller_l', arial
+=Muller-b
+	font-family: 'Muller_b', arial
+//FONTS END
+
+//OTHER STYLES BEGIN
+$yellow: #ffdd2d
+$green: #39b54a
+
+body
+	font-family: 'Muller_r', sans-serif
+	font-size: 14px
+
+*
+	outline: none !important
+
+img
+	max-width: 100%
+
+a
+	transition: 0.4s
+	&:hover
+		transition: 0.4s
+		text-decoration: none
+		opacity: .8
+
+.text-yellow
+	color: $yellow
+button
+	transition: all .4s ease
+	&:hover
+		transition: all .4s ease
+		opacity: .8
+
+//OTHER STYLES END
+//INDEX PAGE STYLES
+.header
+	background: url("../img/index/h_bg.jpg") 50% 0 no-repeat
+	padding-bottom: 529px
+	background-size: 1920px
+	//background-size: cover
+	.header_top
+		padding-top: 30px
+		.h_logo
+			text-align: left
+		.logo_h_img
+			margin-top: -12px
+		.h_contacts
+			max-width: 278px
+			width: 100%
+		.phone
+			text-align: right
+			a
+				+Muller-l
+				font-size: 23px
+				color: #fff
+				img
+					display: inline-block
+				p
+					margin-bottom: 0
+					vertical-align: sub
+					display: inline-block
+					+Muller-l
+					font-size: 23px
+					color: #fff
+					.bld
+						+Muller-b
+				&:hover
+					text-decoration: none
+		.address
+			+Muller-l
+			font-size: 15px
+			color: #fff
+			text-align: right
+		.h_csb
+			margin-left: -15px
+		.order_call
+			display: inline-block
+			.btn_call
+				padding-top: 15px
+				padding-bottom: 15px
+				padding-left: 15px
+				padding-right: 15px
+				color: #000000
+				+Muller-b
+				font-weight: 700
+				text-align: center
+				background-color: #fdd413
+				border: none
+				border-radius: 4px
+				text-transform: uppercase
+		.form_search
+			display: inline-block
+			.form-group
+				z-index: 99
+				padding: 42px 30px
+				position: absolute
+				top: 70px
+				right: 138px
+				width: 500px
+				height: 123px
+				background-color: rgba(34, 35, 41, .8)
+				text-align: center
+				button.close
+					color: #cccccc
+					position: absolute
+					top: 9px
+					right: 8px
+					font-weight: 500
+					border: 1px solid #cccccc
+					border-radius: 50px
+					padding: 0 5px
+					font-size: 18px
+				input
+					position: relative
+					top: 28%
+					transform: translateY(-50%)
+					display: inline-block
+					vertical-align: bottom
+					width: 60%
+					padding-top: 19px
+					padding-bottom: 19px
+					padding-left: 20px
+					color: #a7a7a7
+					+Muller-l
+					font-size: 12px
+				.btn_send
+					position: relative
+					top: 28%
+					transform: translateY(-50%)
+					display: inline-block
+					//max-width: 156px
+					width: 35%
+					+Muller-b
+					font-weight: 700
+					font-size: 14px
+					text-transform: uppercase
+					color: #000000
+					padding-top: 10px
+					padding-bottom: 10px
+					text-align: center
+					margin-left: 10px
+					margin-top: 10px
+					background-color: #fdd413
+					border: none
+					border-radius: 4px
+			.active_search
+				display: block !important
+			button.btn
+				margin-bottom: 0px
+				display: inline-block
+				padding: 0%
+				border-radius: 0px
+				border: none
+			.navbar-left
+				float: none !important
+
+		.h_basket
+			position: relative
+			margin-bottom: 7px
+			display: inline-block
+			transition: all .4s ease
+			img
+				margin-top: 0
+			.number
+				background-color: #fdd413
+				border-radius: 100%
+				color: #42475c
+				+Muller_b
+				font-size: 12px
+				height: 26px
+				padding-top: 5px
+				position: absolute
+				right: -9px
+				text-align: center
+				top: -9px
+				width: 26px
+			&:hover
+				opacity: .8
+				cursor: pointer
+				transition: all .4s ease
+	.header_middle
+		.navbar-default
+			background-color: transparent
+			border: none
+			border-radius: 0px
+			.navbar-collapse
+				padding-left: 0
+			.navbar-nav
+				width: 100%
+				margin: 0 auto
+				float: none
+				>li
+					width: 16.666666667%
+					text-align: center
+					>a
+						+Muller-r
+						font-size: 19px
+						color: #fff
+						padding-left: 9px
+						padding-right: 9px
+						text-transform: uppercase
+			.navbar-nav>.active>a
+				color: #fdd413
+				background-color: #222329
+			.navbar-nav>li>a:focus,
+			.navbar-nav>li>a:hover
+				background-color: #222329
+				color: #fdd413
+			.dropdown-menu
+				margin-top: -2px
+				list-style-type: none
+				background-color: rgba(34, 35, 41,.7)
+				padding: 20px 30px
+				color: #fff
+				>li
+
+					>a
+						padding: 3px 25px
+						color: #fff
+						font-size: 18px
+						+Muller-l
+						&:hover
+							background-color: transparent
+							color: #fdd413
+			ul.dropdown-menu
+				li
+					&:before
+						position: relative
+						top: 24px
+						content: "\f111"
+						font-family: FontAwesome, sans-serif
+						color: #fff
+						font-size: 8px
+					&:hover
+						&:before
+							color: #fdd413
+.modal-dialog
+	.modal-content
+		margin: 0 auto
+		text-align: center
+		padding: 30px 100px 50px 100px
+		max-width: 417px
+		width: 100%
+		background-color: rgba(34, 35, 41, 0.8)
+		.modal-header
+			border: none
+			text-align: center
+			button.close
+				color: #f5f5f5
+				position: absolute
+				top: 9px
+				right: 8px
+				font-weight: 500
+				border: 1px solid #f5f5f5
+				border-radius: 50px
+				padding: 0 5px
+				font-size: 18px
+			.modal-title
+				+Muller-b
+				font-weight: 700
+				color: #fff
+				font-size: 14px
+				text-transform: uppercase
+				color: #fdd413
+		.modal-body
+			.form-control
+				border-radius: 0px
+			.btn-default
+				+Muller-b
+				font-size: 14px
+				text-transform: uppercase
+				color: #000000
+				font-weight: 700
+				background-color: #fdd413
+				border: none
+				width: 100%
+				padding-top: 10px
+				padding-bottom: 10px
+.small_menu
+	position: relative
+	margin-top: -91px
+	.sml_menu
+		margin-bottom: 10px
+		text-align: center
+	.sml_menu_block
+		//transition: all .4s ease
+		position: relative
+		vertical-align: bottom
+		display: inline-block
+		margin-right: 2px
+		height: 193px
+		width: 19%
+		text-align: center
+		background: url("../img/index/sml_menu_block_bg.png") 0 0 no-repeat
+		background-size: cover
+		-webkit-box-shadow: 0px 5px 99px -23px rgba(0,0,0,0.61)
+		-moz-box-shadow: 0px 5px 99px -23px rgba(0,0,0,0.61)
+		box-shadow: 0px 5px 99px -23px rgba(0,0,0,0.61)
+		.sml_menu_hover
+			//transition: all .4s ease
+			display: none
+			position: absolute
+			top: 0px
+			bottom: 0px
+			left: 0px
+			right: 0px
+			background-color: rgba(0,0,0,0.8)
+			ul
+				position: relative
+				margin-bottom: 0
+				top: 18%
+				transform: translateY(-13%)
+				list-style-type: none
+				padding-left: 0
+				li
+					padding: 5px
+					a
+						text-decoration: underline
+						+Muller-r
+						//+Muller-m
+						font-size: 18px
+						color: #fff
+		.sml_img
+			position: relative
+			top: 45%
+			transform: translateY(-50%)
+		.sml_txt
+			top: 18%
+			transform: translateY(-80%)
+			text-align: center
+			position: relative
+			bottom: 0
+			white-space: pre-line
+			a
+				+Muller-r
+				//+Muller-m
+				font-size: 14px
+				color: #fff
+				text-transform: uppercase
+				&:hover
+	.active_sml
+		transition: all .4s ease
+		.sml_menu_hover
+			transition: all .7s ease
+			display: block
+			&:hover
+				display: block
+.product_h2
+	margin-top: 33px
+	padding-left: 27px
+	text-transform: uppercase
+	font-size: 29px
+	+Muller-r
+	color: #42475c
+.marker_n
+	max-width: 104px
+	padding-top: 10px
+	padding-bottom: 10px
+	width: 100%
+	color: #fff
+	position: absolute
+	top: 0px
+	right: 60%
+	background-color: #00a1d6
+	text-align: center
+	+Muller-b
+	font-weight: 700
+	font-size: 14px
+.marker_a
+	max-width: 104px
+	padding-top: 10px
+	padding-bottom: 10px
+	width: 100%
+	color: #fff
+	position: absolute
+	top: 2px
+	right: 52.5%
+	background-color: #fc4545
+	text-align: center
+	+Muller-b
+	font-weight: 700
+	font-size: 14px
+.marker_hit
+	max-width: 104px
+	padding-top: 10px
+	padding-bottom: 10px
+	width: 100%
+	color: #fff
+	position: absolute
+	top: 0px
+	right: 60%
+	background-color: #97d32e
+	text-align: center
+	+Muller-b
+	font-weight: 700
+	font-size: 14px
+.sl_01
+	margin-left: -20px
+	.sl_01_slider
+		//max-width: 301px !important
+		border: 1px solid transparent
+		.sl_01_img
+			max-width: 301px
+			max-height: 256px
+			text-align: center
+			line-height: 256px
+			img
+				display: inline-block
+				vertical-align: middle
+		.sl_01_content
+			margin: 0 auto
+			max-width: 301px
+			width: 100%
+			.sl_header
+				+Muller-b
+				font-weight: 700
+				font-size: 16px
+				color: #42475c
+				white-space: pre-line
+				text-align: center
+				margin-bottom: 10px
+			.sl_price_last
+				text-align: center
+				color: #8c8c8c
+				+Muller-r
+				font-size: 24px
+				margin-bottom: 10px
+				i
+					color: #8c8c8c
+					font-size: 24px
+			.sl_price_now
+				text-align: center
+				+Muller-b
+				font-weight: 700
+				font-size: 24px
+				color: #000
+				margin-bottom: 20px
+				i
+					color: #8c8c8c
+					font-size: 24px
+			.in_basket
+				text-align: center
+				button
+					max-width: 133px
+					width: 100%
+					text-align: center
+					background-color: #fdd413
+					background-image: url("../img/index/shopping-basket.png")
+					background-repeat: no-repeat
+					+Muller-b
+					font-size: 14px
+					padding-top: 10px
+					padding-bottom: 10px
+					border: none
+					background-position: 10% 42%
+					padding-left: 5%
+					&:hover
+						background-color: #dda702
+						color: #fff
+						background-image: url("../img/index/shopping-basket_h.png")
+						background-repeat: no-repeat
+						+Muller-b
+						font-size: 14px
+						padding-top: 10px
+						padding-bottom: 10px
+						border: none
+						background-position: 10% 42%
+						padding-left: 5%
+		&:hover
+			border: 1px solid #fdd413
+	.slick-prev, .slick-next
+		width: 35px
+		height: 35px
+		border: 1px solid #fdd413
+		z-index: 999
+		&:hover
+			background-color: #fdd413
+	.slick-prev
+		position: absolute
+		top: -20px
+		left: auto
+		right: 71px
+		background-image: url("../img/index/arr_left_y.png")
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		&:hover
+			background-image: url("../img/index/arr_left_h.png")
+			background-position: 50% 50%
+			background-repeat: no-repeat
+	.slick-next
+		position: absolute
+		top: -20.5px
+		right: 30px
+		background-image: url("../img/index/arr_right_y.png")
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		&:hover
+			background-image: url("../img/index/arr_right_h.png")
+			background-position: 50% 50%
+			background-repeat: no-repeat
+
+	.slick-prev:before, .slick-next:before
+		content: ""
+
+
+.index_look_catalog
+	padding-top: 62px
+	padding-bottom: 47px
+	margin-top: 61px
+	background: url("../img/index/bg_middle.jpg") 50% 0 no-repeat
+	background-size: cover
+	h3
+		margin-bottom: 7px
+		padding-left: 110px
+		+Muller-b
+		font-weight: 700
+		font-size: 34px
+		color: #fff
+		span
+			color: #fdd413
+	.btn_look
+		margin-left: 115px
+		max-width: 150px
+		width: 100%
+		padding-top: 10px
+		padding-bottom: 10px
+		text-align: center
+		color: #fdd413
+		border: 1px solid #fdd413
+		border-color: #fdd413
+		background-color: transparent
+		+Muller-b
+		font-weight: 700
+
+.ilc_bg
+	padding-top: 150px
+	padding-bottom: 148px
+	background: url("../img/index/bg_middle_2.jpg") 50% 0 no-repeat
+	background-size: cover
+.popular_block
+	background: #f9f9f9
+	//padding-top: 30px
+	padding-bottom: 70px
+	h2
+		margin-top: 23px
+		margin-bottom: 56px
+.sl_03
+	padding: 0 22px
+	.slick-prev, .slick-next
+		width: 35px
+		height: 35px
+		border: 1px solid #fdd413
+		z-index: 999
+		&:hover
+			background-color: #fdd413
+	.slick-prev
+		position: absolute
+		top: -73px
+		left: auto
+		right: 71px
+		background-image: url("../img/index/arr_left_y.png")
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		&:hover
+			background-image: url("../img/index/arr_left_h.png")
+			background-position: 50% 50%
+			background-repeat: no-repeat
+	.slick-next
+		position: absolute
+		top: -73.5px
+		right: 30px
+		background-image: url("../img/index/arr_right_y.png")
+		background-position: 50% 50%
+		background-repeat: no-repeat
+		&:hover
+			background-image: url("../img/index/arr_right_h.png")
+			background-position: 50% 50%
+			background-repeat: no-repeat
+
+	.slick-prev:before, .slick-next:before
+		content: ""
+
+
+.last_news
+	padding-top: 30px
+	padding-bottom: 38px
+	h2
+		padding-left: 20px
+		margin-top: 30px
+		margin-bottom: 20px
+		//padding-left: 16px
+		text-transform: uppercase
+		font-size: 28px
+		+Muller-r
+		color: #42475c
+	.btn_look_all
+		position: absolute
+		top: 25px
+		right: 92px
+		+Muller-b
+		font-size: 14px
+		font-weight: 700
+		color: #fdd413
+		border: 1px solid #fdd413
+		background-color: transparent
+		padding: 10px 15px
+	.lnb_cont
+		padding: 0px 20px
+	.last_new_block
+		.ln_img
+			img
+				width: 100%
+		.ln_header
+			margin-bottom: 10px
+			+Muller-b
+			font-size: 14px
+			font-weight: 700
+			white-space: pre-line
+
+		.ln_date
+			p
+				+Muller-r
+				font-size: 12px
+				color: #a7a7a7
+				font-weight: 100
+		.ln_txt
+			p
+				+Muller-r
+				font-size: 14px
+.map-responsive
+	overflow: hidden
+	padding-bottom: 22%
+	position: relative
+	height: 0
+	min-height: 300px
+
+.map-responsive
+	iframe
+		left: 0
+		top: 0
+		max-height: 414px
+		width: 100%
+		position: absolute
+
+h1
+	+Muller-b
+	font-size: 40px
+.no_pl_pr
+	padding-left: 0
+	padding-right: 0
+.no_pl
+	padding-left: 0
+.no__pr
+	padding-left: 0
+.footer
+	margin-top: -5px
+	padding-top: 43px
+	padding-bottom: 60px
+	background: #222329
+	.f_logo
+		img
+			margin-top: -21px
+	p.logo_txt
+		+Muller-r
+		font-size: 20px
+		color: #fff
+	p.f_address
+		color: #c4c4c4
+		+Muller-l
+		font-size: 14px
+	.f_menu
+		ul
+			list-style-type: none
+			padding-left: 0
+			li
+				padding: 2px 0px
+				a
+					+Muller-l
+					font-size: 16px
+					color: #fff
+	.phone
+		text-align: right
+		a
+			+Muller-l
+			font-size: 23px
+			color: #fff
+			img
+				display: inline-block
+			p
+				margin-bottom: 0
+				vertical-align: sub
+				display: inline-block
+				+Muller-l
+				font-size: 23px
+				color: #fff
+				.bld
+					+Muller-b
+			&:hover
+				text-decoration: none
+	.address
+		+Muller-l
+		font-size: 15px
+		color: #fff
+		text-align: right
+	.order_call
+		width: 100%
+		text-align: right
+		display: inline-block
+		margin-bottom: 47px
+		.btn_call
+			width: 100%
+			padding-top: 15px
+			padding-bottom: 15px
+			padding-left: 30px
+			padding-right: 30px
+			color: #000000
+			+Muller-b
+			font-weight: 700
+			text-align: center
+			background-color: transparent
+			border-radius: 0px
+			border-color: #fdd413
+			text-transform: uppercase
+			color: #fdd413
+	.social_block
+		text-align: right
+		padding-top: 30px
+		.soc
+			margin-right: 2px
+			display: inline-block
+	.f_time
+		padding-top: 3px
+		color: #fff
+		+Muller_b
+		font-weight: 700
+	.h_contacts
+		padding-top: 25px
+	.slon_img
+		width: 100%
+		text-align: right
+		img
+			width: 78%
+
+//END INDEX PAGE STYLES
+// media
+@media (min-width: 1199px)
+	.container
+		max-width: 1000px
+		width: 100%
+		padding-right: 0
+
+
+@media (max-width: 1199px)
+	//.container
+	//	max-width: 990px
+	//	width: 100%
+	.header
+		padding-bottom: 33%
+		.header_middle
+			.navbar-default
+				.dropdown-menu>li>a
+					font-size: 14px
+				.navbar-nav>li>a
+					font-size: 18px
+	.header .header_middle .navbar-default ul.dropdown-menu li:before
+		top: 21px
+	.small_menu
+		margin-top: -55px
+		.sml_menu_block
+			width: 18.6667%
+
+	.sl_01
+		//.slick-prev
+		//	top: -21px
+		//	left: 88.5%
+		//.slick-next
+		//	top: -21px
+		//	right: 34px
+	.product_h2
+		padding-left: 30px
+	.index_look_catalog
+		h3
+			padding-left: 10px
+		.btn_look
+			margin-left: 10px
+	.sl_03
+		padding: 0px 30px
+		//.slick-next
+		//	top: -73px
+		//	right: 34px
+		//.slick-prev
+		//	left: 88.5%
+	.last_news
+		h2
+			padding-left: 20px
+		.btn_look_all
+			right: 35px
+		.lnb_cont
+			padding: 0 19px
+
+@media (max-width: 992px)
+	.container
+		max-width: 100%
+		width: 100%
+	.header
+		.header_top
+			.h_logo
+				text-align: left
+			.h_contacts
+				max-width: 100%
+			.h_csb
+				margin-left: 0
+				text-align: right
+				width: 100%
+		.header_middle
+			.navbar-default
+				.navbar-nav>li>a
+					font-size: 16px
+	.hidden_block
+		text-align: center
+		.sml_menu_block
+			width: 100%
+			min-height: 193px
+			margin-bottom: 15px
+			background-position-y: -150px
+	.last_news
+		padding-top: 0
+		.btn_look_all
+			top: 0
+	.footer
+		padding-bottom: 30px
+		.no_pl
+			padding-left: 15px
+		.h_contacts
+			padding-top: 0px
+			position: absolute
+			top: -136px
+		.phone, .address, .social_block
+			text-align: left
+		.social_block
+			position: absolute
+			top: -89px
+		.f_time
+			padding-top: 20px
+			text-align: center
+		.slon_img
+			img
+				width: auto
+		.order_call
+			margin-bottom: 20px
+@media(max-width: 768px)
+	.modal-dialog
+		.modal-content
+			padding: 30px 30px 50px 30px
+	.header .header_top .form_search .active_search
+		top: 182px
+		width: 82%
+		right: 66px
+
+	.navbar-default .navbar-collapse,
+	.navbar-default .navbar-form
+		border-color: #fdd413
+	.navbar-default .navbar-toggle:focus,
+	.navbar-default .navbar-toggle:hover
+		background-color: #fdd413
+		opacity: 1
+		border-color: #fdd413
+	.header .header_middle .navbar-default .navbar-nav
+		background: rgba(70,72,83,.3)
+	.header
+		.header_top
+			.h_logo
+				text-align: center
+			.h_contacts
+				.phone, .address
+					text-align: center
+			.h_csb
+				text-align: center
+		.header_middle
+			.navbar-default
+				.navbar-toggle
+					border-color: #fdd413
+				.navbar-nav>li
+					width: 100%
+				.navbar-collapse
+					padding-right: 0
+	.hidden_block
+		.sml_menu_block
+			background-position-y: -71px
+	.sl_01
+		.sl_01_slider
+			.sl_01_img
+				margin: 0 auto
+
+	.footer
+		.f_logo, .logo_txt, .f_address
+			text-align: center
+		.f_menu
+			text-align: center
+			ul
+				li
+		.h_contacts
+			position: relative
+			top: 0px
+			.address, .phone
+				text-align: center
+		.social_block
+			position: relative
+			top: 0px
+			text-align: center
+		.slon_img
+			text-align: center
+		.order_call
+			text-align: center
+			.btn_call
+				width: 50%
+	.sl_01
+		margin-left: 0
+		.slick-next
+			top: -20px
+@media(max-width: 600px)
+	.header .header_top .form_search .active_search
+		top: 168px
+		width: 100%
+		right: 0
+	.header
+		.header_top
+			.address
+				font-size: 10px
+			.phone
+				a
+					img
+						margin-top: 12px
+					p
+						font-size: 14px
+	.hidden_block
+		.sml_menu_block
+			background-position-y: 0px
+			.sml_img
+				min-height: 143px
+	.product_h2
+		font-size: 24px
+		span
+			display: block
+	.sl_01
+		.slick-next
+			top: -46.5px
+		.slick-prev
+			top: -46px
+	.sale_block
+		.sl_01
+			.slick-next
+				top: -27.5px
+			.slick-prev
+				top: -27px
+		.sl_03
+			.slick-next
+				top: -84.5px
+			.slick-prev
+				top: -84px
+	.last_news
+		h2
+			font-size: 24px
+		.btn_look_all
+			position: relative
+			top: 0
+			left: 18px
+			right: auto
+			margin-bottom: 20px
+	.footer .order_call .btn_call
+		width: 100%
+@media (max-width: 460px)
+	.header .header_top .form_search .form-group input,
+	.header .header_top .form_search .form-group .btn_send
+		width: 100%
+		margin-left: 0
+	.header
+		.header_top
+			.h_csb
+				text-align: center
+
+	.small_menu
+		.sml_menu_block
+			.sml_txt
+				a
+					font-size: 12px
+
+	.product_h2
+		padding-left: 19px
+		font-size: 19px
+	.index_look_catalog
+		h3
+			font-size: 20px
+	.ilc_bg
+		padding-top: 30px !important
+		padding-bottom: 30px !important
+	.last_news h2
+		font-size: 19px
