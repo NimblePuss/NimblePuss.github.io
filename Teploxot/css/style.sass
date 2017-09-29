@@ -1,0 +1,2613 @@
+//FONTS BEGIN
+@import "http://webfonts.ru/import/intro.css"
+=font-face($family, $path, $weight: normal, $style: normal)
+	@font-face
+		font-family: $family
+		src: url('#{$path}.eot')
+		src: url('#{$path}.eot?#iefix') format('embedded-opentype'), url('#{$path}.woff') format('woff'), url('#{$path}.ttf') format('truetype'), url('#{$path}.svg#') format('svg')
+		font-weight: $weight
+		font-style: $style
+
++font-face('MullerBold', '../fonts/mullerregular-webfont')
+=Intro-Regular
+	font-family: "IntroRegular", arial, sans-serif
+=Muller-b
+	font-family: "MullerBold", arial, sans-serif
+//FONTS END
+
+//OTHER STYLES BEGIN
+$orange: #f58220
+$darkblue: #007dc6
+$blue: #4aacc6
+$purple: #b355a0
+$darkyellow: #c99014
+$yellow: #fdb813
+$darkgreen: #00a76d
+$green: #8cc63f
+$darkred: #cf5242
+$red: #ff6652
+$btn_cost: #ff4300
+
+// cover
+=cover
+	background-position: center center
+	background-repeat: no-repeat
+	background-size: cover
+// media
+// $width - ширина на адаптив
+// @content - класс элемента
+=r($width)
+	@media only screen and (max-width: $width + px)
+		@content
+
+body
+	font-family: 'Gotham', sans-serif
+	font-size: 14px
+	width: 100%
+	overflow-x: hidden
+
+*
+	outline: none !important
+
+img
+	max-width: 100%
+
+a
+	transition: 0.4s ease
+	text-decoration: none
+button
+	transition: 0.4s ease
+.text-yellow
+	color: $yellow
+
+//OTHER STYLES END
+//styles for index page
+//menu fixed
+#menu_fixed
+	position: fixed
+	display: none
+	background: #fff
+	opacity: 1
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 999
+	transition: all 0.5s ease
+	.menu_f
+		.tel
+			text-align: center
+	&:hover
+		opacity: 2
+		transition: all 0.5s ease
+
+//header top
+.header_top, .menu_f
+	max-width: 1161px
+	width: 100%
+	overflow: hidden
+	margin: 0 auto
+	margin-bottom: 19px
+	.logo
+		float: left
+	.searchBlock
+		max-width: 360px
+		position: relative
+		float: right
+		width: 100%
+		margin-top: 35px
+		margin-right: 61px
+		height: 45px
+		input
+			border-radius: 0px
+			height: 45px
+			font-size: 16px
+		i
+			color: #6a6a6a
+			position: absolute
+			font-size: 21px
+			right: 12px
+			top: 50%
+			transform: translateY(-50%)
+	.header_top__right
+		margin-top: 32px
+		margin-left: -11px
+		color: #7c7c7c
+		font-size: 19px
+		font-weight: 100
+		+Intro-Regular
+		.col-md-6
+			padding-left: 0
+			padding-right: 0
+			text-align: center
+		.basket
+			a
+				color: #7c7c7c
+			img
+				margin-top: -12px
+		.tel
+			a
+				font-size: 17px
+				color: #7c7c7c
+		.room
+			margin-left: -46px
+			a
+				color: #7c7c7c
+			img
+				margin-top: -15px
+				margin-left: 5px
+		.contacts
+			margin-left: -30px
+			a
+				color: #7c7c7c
+			img
+				margin-top: -8px
+				margin-left: 6px
+
+//header middle
+.header_middle
+	margin-left: 0px
+	text-align: center
+	max-width: 1161px
+	width: 100%
+.orange, .darkblue, .blue, .purple, .yellow, .drkgreen, .green
+	text-transform: uppercase
+	font-size: 14px
+	font-weight: bold
+	+Intro-Regular
+	position: relative
+	z-index: 1
+	a
+		p
+			color: $orange
+	//border: 1px solid $orange
+.darkblue
+	a
+		p
+			color: $darkblue
+	//border: 1px solid $darkblue
+.blue
+	a
+		p
+			color: $blue
+	//border: 1px solid $blue
+.purple
+	a
+		p
+			color: $purple
+	//border: 1px solid $purple
+.yellow
+	a
+		p
+			color: $yellow
+	//border: 1px solid $yellow
+.drkgreen
+	a
+		p
+			color: $darkgreen
+	//border: 1px solid $darkgreen
+.green
+	a
+		p
+			color: $green
+	//border: 1px solid $green
+.navbar-default
+	background-color: transparent
+	border: 0px
+	.navbar-collapse
+		border: 0px
+		background-color: transparent
+		padding-left: 0
+		padding-right: 0
+		z-index: 1
+		li
+			max-width: 159px
+			width: 100%
+			margin-left: 4px
+			text-align: center
+			height: auto
+			z-index: 1
+			&:first-child
+				margin-left: 0
+				z-index: 1
+			p
+				margin-top: 5px
+				z-index: 1
+.navbar-default
+	.navbar-nav>li>a
+		margin-top: -30px
+		padding: 0 1px
+		padding-top: 31px
+.nav>li>a>img
+	max-width: 100%
+.header_bottom
+	margin-top: -10px
+	.line_slider1
+		max-width: 1161px
+		margin: 0 auto
+		width: 100%
+.brd_orange
+	border: 5px solid $orange
+	float: left
+	position: relative
+	margin-left: 0px
+	width: 51%
+
+.brd_blue
+	border: 5px solid $blue
+	width: 23.7%
+	float: left
+	margin: 0px 0.75%
+
+.brd_purple
+	border: 5px solid $purple
+	width: 23.7%
+	float: left
+
+.navbar-default .navbar-collapse li:first-child
+	z-index: 3
+//drop menu orange
+
+ul.menu_orange
+	display: none
+	text-align: left
+	width: 480px
+	padding-left: 55px
+	margin-top: -35px
+	margin-left: 1px
+	padding-top: 0px
+	padding-bottom: 25px
+	z-index: 4
+	position: absolute
+	border: 1px solid $orange
+	background-color: #f8f8f8
+	li.menu_orange_li
+		list-style-image: url(../img/header/li_menu.png)
+		padding-left: 26px
+		padding-right: 66px
+		letter-spacing: 1.3px
+		font-weight: bold
+		max-width: 450px
+		text-align: left
+		margin-left: 0px
+		padding-top: 10px
+		line-height: 32px
+		z-index: 3
+		&:hover
+			list-style-image: url(../img/header/li_menu_hover.png)
+		a
+			display: block
+			font-size: 16px
+			font-weight: 500
+			+Intro-Regular
+			color: #8b8b8b
+			border-bottom: 1px solid #c0c0c0
+			padding-bottom: 4px
+			&:hover
+				color: #4c5558
+				text-decoration: none
+		&:last-child
+			a
+				border-bottom: 0px
+
+.menu_orange_accordion
+	display: none
+	list-style-type: none
+	padding-top: 10px
+	padding-bottom: 10px
+	background-color: #eaebeb
+	width: 477px
+	margin-left: -81px
+	padding-left: 78px
+	li.mo_accord_li
+		list-style-image: none
+		color: #a6a6ad
+		text-transform: none
+		text-align: left
+		a
+			border-bottom: 0px!important
+			&:hover
+				color: $orange!important
+
+.slider1
+	max-width: 1161px
+	margin-left: 21.3%
+	.sl_slide
+		position: relative
+		.sl_content
+			position: absolute
+			right: 0px
+			top: 26%
+.batary
+	border: 1px solid rgba(245, 130, 32, 0.7)
+	background-color: rgba(245, 130, 32, 0.7)
+	padding-top: 20px
+	padding-bottom: 20px
+	padding-left: 38px
+	padding-right: 55px
+	text-transform: uppercase
+	color: white
+	max-width: 600px
+	font-size: 40px
+	font-weight: bold
+	+Intro-Regular
+	position: relative
+	right: 0
+	margin-left: 28px
+
+.price_batary
+	border: 1px solid rgba(32, 159, 134, 0.7)
+	background-color: rgba(32, 159, 134, 0.7)
+	padding-top: 20px
+	padding-bottom: 20px
+	padding-left: 34px
+	padding-right: 30px
+	text-transform: uppercase
+	color: white
+	max-width: 629px
+	font-size: 40px
+	font-weight: bold
+	+Intro-Regular
+	span.pb_span
+		font-size: 55px
+	span
+		font-size: 40px
+		text-transform: none
+
+
+.carousel-inner
+	position: relative
+	width: 100%
+	overflow: hidden
+	max-width: 1161px
+	margin: 0 auto
+	padding-right: 2px
+.carousel-control.left
+	background: transparent
+	opacity: 1
+
+.carousel-control.right
+	background: transparent
+	opacity: 1
+.carousel-caption
+	z-index: 0
+	right: 0px
+	left: auto
+	bottom: auto
+	top: 50%
+	transform: translateY(-50%)
+.glyphicon.left
+	width: 40px
+	height: 40px
+	border: 1px solid #fff
+	border-radius: 20px
+	background-color: #fff
+	left: -20px
+	top: 50%
+	position: absolute
+	transform: translateY(-50%)
+	opacity: 1
+	transition: all 0.5s ease
+	img
+		margin-left: -4px
+		margin-top: 10px
+	&:hover
+		border: 1px solid #ccc
+		border-radius: 20px
+		background-color: #ccc
+		transition: all 0.5s ease
+.glyphicon.right
+	width: 40px
+	height: 40px
+	right: -20px
+	top: 50%
+	position: absolute
+	transform: translateY(-50%)
+	border: 1px solid #fff
+	border-radius: 20px
+	background-color: #fff
+	transition: all 0.5s ease
+	img
+		margin-left: 4px
+		margin-top: 10px
+	&:hover
+		border: 1px solid #ccc
+		border-radius: 20px
+		background-color: #ccc
+		transition: all .5s ease
+.carousel-indicators
+	bottom: -48px
+	left: 52%
+.carousel-indicators li
+	background-color: #115779
+	color: #115779
+.carousel-indicators .active
+	color: #115779
+	border-color: #115779
+
+//block_fixed styles
+.block_fixed
+	position: fixed
+	top: 38%
+	right: 0
+	text-align: right
+	max-width: 212px
+	width: 100%
+	z-index: 9999
+	.bf_call
+		position: absolute
+		right: -166px
+		top: 0
+		max-width: 212px
+		width: 100%
+		display: inline-block
+		background-color: $yellow
+		margin-bottom: 2px
+		transition: all 0.5s ease
+		&:hover
+			opacity: 0.7
+			right: 0px
+			transition: 0.7s ease
+		.bf_call_img
+			width: 58px
+			background-color: $darkyellow
+			float: left
+			padding-top: 6%
+			padding-bottom: 6%
+			vertical-align: middle
+			margin-left: -12px
+			text-align: center
+			border-right: 1px solid #fff
+
+	.bf_question
+		position: absolute
+		right: -166px
+		top: 66px
+		max-width: 212px
+		width: 100%
+		display: inline-block
+		background-color: $red
+		transition: all 0.5s ease
+		&:hover
+			opacity: 0.7
+			right: 0px
+			transition: 0.7s ease
+		.bf_question_img
+			width: 58px
+			background-color: $darkred
+			float: left
+			padding-top: 6%
+			padding-bottom: 6%
+			vertical-align: middle
+			margin-left: -12px
+			text-align: center
+			border-right: 1px solid #fff
+	.bf__text
+		font-size: 20px
+		font-weight: bold
+		text-transform: uppercase
+		text-align: center
+		a
+			color: #fff
+			text-decoration: none
+
+
+//styles novety - slider
+.slider_novelty
+	margin-top: 54px
+.h2_novelty
+	margin-top: 10%
+	padding-left: 91px
+	text-transform: uppercase
+	color: $orange
+	font-size: 32px
+	font-weight: bold
+	+Intro-Regular
+	text-align: center
+	letter-spacing: 2px
+.zindex0
+	z-index: 0
+.zindex1
+	z-index: 1
+.bak_wester
+	padding-left: 9px
+	padding-right: 0
+	max-width: 266px
+	max-height: 460px
+	width: 100%
+	text-align: left
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 100
+	+Intro-Regular
+	.bw_img
+		margin: -14px auto 0
+	.bw_discription
+		margin-top: -20px
+		table
+			margin-bottom: 7px
+			td
+				border: 0px
+				padding: 3px
+	p.bw_header
+		padding-right: 5px
+		font-size: 16px
+		font-weight: 100
+		+Intro-Regular
+		text-transform: none
+		text-align: left
+	.pos_img_r
+		float: right
+		margin-top: -9px
+		margin-right: 21px
+
+	input
+		margin-right: 5px
+		margin-left: -3px
+		max-width: 38px
+		border-radius: 4px
+		text-align: left
+	button
+		max-width: 80px
+		max-height: 33px
+		width: 100%
+		height: 100%
+		text-transform: uppercase
+		&:hover
+			opacity: 0.7
+	.btn
+		border-radius: 0px
+	.btn-danger
+		background-color: #ff8357
+		border-color: #ff8357
+		&:hover
+			background-color: #ff4300
+
+.color_text
+	color: #81868c
+	line-height: 14px
+.bak_wester_price
+	position: relative
+	margin-bottom: 20px
+	margin-top: 0px
+	padding-top: 5px
+	font-size: 18px
+	font-weight: 300
+	+Intro-Regular
+	text-align: center
+.form-inline
+	text-align: center
+	.form-control
+		padding: 6px 5px
+/*arrows slider 3 section 3*/
+.slider_novelty .slick-next:hover:before, .slider_novelty .slick-prev:hover:before
+	border-color: $orange
+	transition: all .6s ease
+	color: $orange
+
+.slider_novelty .slick-next:before
+	opacity: 1
+	position: absolute
+	top: 0
+	left: 0
+	content: '\f105'
+	color: #ccc
+	font-family: 'FontAwesome', sans-serif
+	font-size: 40px
+	line-height: 40px
+	height: 46px
+	width: 46px
+	border: 1px solid #cccccc
+	border-radius: 100%
+	transition: all .6s ease
+	padding-left: 5px
+	z-index: 99
+
+.slider_novelty .slick-prev:before
+	opacity: 1
+	position: absolute
+	top: 0
+	left: 0
+	content: '\f104'
+	color: #ccc
+	font-family: 'FontAwesome', sans-serif
+	font-size: 40px
+	line-height: 40px
+	height: 46px
+	width: 46px
+	border: 1px solid #cccccc
+	border-radius: 100%
+	transition: all .6s ease
+	padding-right: 5px
+	z-index: 99
+
+.slick-prev
+	text-align: center
+	left: -40px
+	top: 35%
+	height: 46px
+	width: 46px
+	z-index: 99
+.slick-next
+	text-align: center
+	right: -40px
+	top: 35%
+	height: 46px
+	width: 46px
+	z-index: 99
+
+.slick-list
+	width: 100%
+.all_novelty
+	margin-top: 4.8%
+	text-align: center
+	button
+		max-width: 201px
+		width: 100%
+		height: auto
+		margin-left: 6%
+		padding-top: 11px
+		padding-bottom: 11px
+		color: #ff8357
+		border: 3px solid #ff8357
+		background-color: #fff
+		text-transform: uppercase
+		&:hover
+			background-color: #ff8357
+			color: #fff
+
+.sale_block
+	margin-bottom: 7%
+//footer styles
+footer
+	background-color: #d3d7d4
+	padding-bottom: 8%
+	.footer_content
+		max-width: 1243px
+		width: 100%
+		margin: 0 auto
+		padding-top: 16px
+		.container
+			padding-right: 0
+			margin-right: 0
+		ul
+			display: inline-block
+			list-style-type: none
+			vertical-align: top
+			li
+				margin-left: -4px
+				font-size: 14px
+				font-weight: 100
+				+Intro-Regular
+		.footer_menu_left
+			float: left
+			max-width: 526px
+			width: 100%
+			.col-lg-12
+				padding-left: 0px
+			ul
+				padding-left: 4px
+				li
+					a
+						color: #a5a1a4
+						text-decoration: underline
+						&:hover
+							color: #686868
+			.fml_ul_1
+				display: inline-block
+				li
+					margin-bottom: 4px
+			.fml_ul_2
+				display: inline-block
+				padding-left: 52px
+				li
+					margin-bottom: 18px
+			.fml_ul_3
+				width: 35%
+				display: inline-block
+				padding-left: 59px
+				line-height: 18px
+		.footer_menu_right
+			max-width: 674px
+			width: 100%
+			float: left
+			margin-left: -16px
+			ul
+				display: inline-block
+				float: left
+				padding-left: 0
+				li
+					a
+						color: #a5a1a4
+						text-decoration: underline
+						&:hover
+							color: #686868
+			.fmr_ul_1
+				padding-left: 0px
+			.fmr_ul_2
+				padding-left: 61px
+			.banners_block
+				display: inline-block
+				margin-left: 34px
+				.fmr_banner_1
+					max-width: 140px
+					width: 100%
+					height: auto
+					float: left
+					margin-left: 24px
+					margin-top: -13px
+					margin-right: 4px
+				.fmr_banner_2
+					max-width: 140px
+					width: 100%
+					height: auto
+					float: left
+					margin-top: -13px
+	.footer_bottom
+		width: 100%
+		height: auto
+		margin-top: 101px
+		margin-left: -13px
+		line-height: 25px
+		font-size: 14px
+		font-weight: 100
+		+Intro-Regular
+		color: #a5a1a4
+		.logo_footer
+			margin-top: 7px
+			margin-left: 29px
+.li_back_call
+	margin-top: 27px
+	//btn up
+#toTop
+	z-index: 9999
+	width: 90px
+	border: 1px solid #ccc
+	background: $orange
+	text-align: center
+	padding: 11px
+	position: fixed
+	bottom: 10px
+	right: 10px
+	cursor: pointer
+	display: none
+	color: #333
+	font-size: 12px
+	font-weight: 300
+	+Intro-Regular
+	color: #fff
+	border: 2px solid $orange
+	font-weight: bold
+	transition: all 0.5s ease
+	&:hover
+		background: #fff
+		color: $orange
+		border: 2px solid $orange
+		transition: all 0.5s ease
+
+//VITRINA PAGE STYLES
+.vitrina_page_ht
+	margin-bottom: 3px
+.v_conditions
+	padding-left: 30px
+	display: block
+	width: 100%
+	font-size: 0px
+	font-weight: 300
+	color: #c0c0c0
+	+Intro-Regular
+	.v_delivery,
+	.v_consultations,
+	.v_discounts,
+	.v_pay,
+	.v_montag
+		display: inline-block
+		font-size: 13px
+		font-weight: 300
+		color: #c0c0c0
+		+Intro-Regular
+		width: 20%
+		vertical-align: top
+		img
+			float: left
+		.vhb_txt
+			padding-left: 54px
+	.v_delivery
+		.vhb_txt
+			padding-right: 27px
+	.v_discounts
+		.vhb_txt
+			padding-right: 15px
+	.v_pay
+		.vhb_txt
+			padding-right: 7px
+
+	.v_montag
+		.vhb_txt
+			padding-right: 4px
+			span.sp_orange
+				display: block
+	.sp_orange
+		color: $orange
+		font-weight: bold
+	.sp_grey
+		color: #7c7c7c
+		font-weight: bold
+
+.txt_upercase
+	text-transform: uppercase
+.breadcrumb
+	background-color: transparent
+	padding-left: 0
+	li
+		a
+			color: #c0c0c0
+			&:hover
+				cursor: pointer
+.breadcrumb>.active
+	color: $darkblue
+	text-decoration: underline
+	&:hover
+		cursor: pointer
+.bcrmb_slash
+	font-size: 16px
+	color: #c0c0c0
+.vitrina_aside
+	max-width: 227px
+	width: 100%
+	margin-right: 22px
+	background-color: #e5e5e5
+	h2
+		font-size: 18px
+		font-weight: bold
+		+Intro-Regular
+		color: $orange
+		text-transform: uppercase
+	.col-md-12
+		padding-left: 0px
+		padding-right: 0px
+	.v_filtr
+		padding-top: 5px
+		padding-right: 16px
+		padding-left: 20px
+		width: 100%
+		padding-bottom: 29px
+		border-bottom: 1px solid #ccc
+		.col-sm-6
+			padding-left: 0px
+			padding-right: 0
+			span.filter__slider-text
+				margin-right: 9px
+		.form-inline
+			.form-group
+				max-width: 209px
+				width: 100%
+				padding-top: 15px
+			.form-control
+				padding: 6px 5px
+				max-width: 60px
+				max-height: 28px
+				border: 1px solid #29729c
+		.ui-widget-content
+			background: #9fa1a3
+		.ui-widget-header
+			background: $orange
+		.ui-slider
+			height: 9px
+			.ui-slider-handle
+				width: 10px
+				border-radius: 0px
+				background: #156594
+				border-color: #ccc
+				transition: all .6s ease
+				&:hover
+					background: #ccc
+					border-color: $orange
+					transition: all .6s ease
+	.v_brand, .v_max_head, .v_type_head
+		padding-top: 15px
+		padding-right: 20px
+		padding-left: 20px
+		border-bottom: 1px solid #ccc
+		padding-bottom: 15px
+		background: url("../img/bg_aside.jpg") repeat
+	.v_check_list
+		padding-top: 8px
+		.checkbox_inp
+			display: none
+		.checkbox-custom
+			position: absolute
+			left: 0px
+			top: 2px
+			width: 16px
+			height: 16px
+			border: 1px solid #156594
+			border-radius: 0px
+		.checkbox-custom,.label
+			display: inline-block
+			vertical-align: middle
+		span.label
+			margin-top: 0px
+			text-align: left
+			padding-left: 30px
+			font-size: 16px
+			font-weight: 300
+			+Muller-b
+			color: #000
+			span
+				display: block
+		.checkbox_inp:checked + .checkbox-custom:before
+			content: "\f00c"
+			font-family: FontAwesome, sans-serif
+			display: block
+			position: absolute
+			top: -3px
+			right: 3px
+			left: 0px
+			border-radius: 2px
+		.checkbox label
+			padding-left: 0
+	.v_type_pumb
+		padding-top: 15px
+		padding-right: 20px
+		padding-left: 20px
+		padding-bottom: 20px
+		background: url("../img/bg_aside.jpg") repeat
+	.v_buttons
+		background: #e5e5e5
+		text-align: center
+		padding-top: 30px
+		padding-bottom: 54px
+		color: #fff
+		font-size: 11px
+		font-weight: 100
+		+Intro-Regular
+		.v_reset
+			padding-top: 11px
+			padding-bottom: 11px
+			padding-left: 14px
+			padding-right: 14px
+			background-color: #989898
+			border-color: #989898
+			border: 0px
+			text-transform: uppercase
+			margin-right: 5px
+			&:last-child
+				margin-right: 0
+			&:hover
+				background-color: #ff8357
+.mL
+	margin-left: -14px
+//left block aside vitrina page
+.left_block
+	max-width: 230px
+	width: 100%
+	margin-right: 22px
+	padding-top: 41px
+	.navbar-nav>li
+		text-align: left
+		padding-left: 0px
+		margin-bottom: 5px
+		a
+			padding: 10px 0px
+			color: #fff
+			display: block
+			padding-left: 84px
+			font-size: 13px
+
+	.orange
+		background: url("../img/lm_01.jpg") no-repeat
+		width: 100%
+
+	.darkblue
+		background: url("../img/lm_02.jpg") no-repeat
+		width: 100%
+		font-size: 13px
+		color: #fff
+	.blue
+		background: url("../img/lm_03.jpg") no-repeat
+		width: 100%
+	.purple
+		background: url("../img/lm_04.jpg") no-repeat
+		width: 100%
+	.yellow
+		background: url("../img/lm_05.jpg") no-repeat
+		width: 100%
+	.drkgreen
+		background: url("../img/lm_06.jpg") no-repeat
+		width: 100%
+	.green
+		background: url("../img/lm_07.jpg") no-repeat
+		width: 100%
+	.menu_orange
+		list-style-type: none
+		position: relative
+		margin-left: 0px
+		margin-top: -4px
+		color: #ccc
+		max-width: 230px
+		width: 100%
+		padding-left: 0px
+		li.menu_orange_li
+			position: relative
+			list-style-image: none
+			padding-right: 0px
+			padding-left: 0px
+			padding-top: 0
+			line-height: 17px
+			&:hover
+				list-style-image: none
+			a
+				color: inherit
+				padding-left: 10px
+				font-size: 12px
+				padding-right: 21px
+				&:hover
+					font-weight: bold
+
+	.menu_orange_accordion
+		max-width: 230px
+		width: 100%
+		margin-left: 0px
+		padding-left: 0px
+		li
+			a
+				padding-left: 0
+.mt01
+	a
+		margin-top: -10px
+.left_block
+	li.menu_orange_li:after
+		opacity: 1
+		position: absolute
+		top: 10px
+		left: 205px
+		content: '\f105'
+		color: #ccc
+		font-family: 'FontAwesome', sans-serif
+		font-size: 10px
+		font-weight: 100
+		height: 13px
+		width: 13px
+		border: 1px solid #ccc
+		border-radius: 20px
+		text-align: center
+		line-height: 11px
+		padding-left: 2px
+		//transform: translateY(-50%)
+	li.menu_orange_li:hover:after
+		content: '\f107'
+		color: $orange
+		font-family: 'FontAwesome', sans-serif
+		font-weight: 100
+		font-size: 10px
+		top: 10px
+		left: 205px
+		text-align: center
+		height: 13px
+		width: 13px
+		line-height: 11px
+		border: 1px solid #ccc
+		border-color: $orange
+		border-radius: 20px
+		//transform: translateY(0%)
+.left_block .navbar-nav>li a:hover
+	background-color: transparent
+
+.ui-slider-horizontal
+	height: .5em
+
+.vitrina_content
+	max-width: 909px
+	width: 100%
+#carousel-example-generic_vitrina
+	.carousel-indicators
+		bottom: -39px
+		left: 50%
+	.sl_content
+		margin-top: 16px
+	.price_batary
+		padding-top: 7px
+		padding-left: 23px
+		padding-bottom: 10px
+		padding-right: 40px
+		font-size: 34px
+		span
+			font-size: 34px
+		span.pb_span
+			font-size: 45px
+.img_sale, .img_hit, .img_new
+	position: absolute
+	margin-top: 24px
+	margin-left: 57px
+
+.v_accessories
+	width: 100%
+	max-width: 909px
+	padding-top: 19px
+	h1
+		padding-left: 13px
+		color: $orange
+		text-transform: uppercase
+		font-size: 27px
+		font-weight: bold
+		+Intro-Regular
+	.v_selects
+		width: 100%
+		.v_selects_sort, .v_selects_conclusion
+			width: 100%
+			padding-top: 25px
+			span
+				margin-right: 18px
+				font-size: 14px
+				font-weight: bold
+				+Intro-Regular
+				color: $orange
+				text-transform: uppercase
+				float: left
+			.vsc_sel::-ms-expand
+				background: #fff url('../img/down-arrow.jpg') no-repeat 98% center
+				border: none
+				color: #fff
+			.vsc_sel
+				padding-left: 7px
+				padding-right: 3px
+				margin-top: -5px
+				max-width: 148px
+				width: 100%
+				min-height: 33px
+				overflow: hidden
+				background: #fff url('../img/down-arrow.jpg') no-repeat 98%
+				background-color: #fff
+				-webkit-border-radius: 3px
+				border-radius: 3px
+				-webkit-box-shadow: inset 0px 0px 10px 1px #fefefe
+				box-shadow: inset 0px 0px 10px 1px #fefefe
+				font-size: 16px
+				font-weight: 100
+				+Intro-Regular
+				-webkit-appearance: none
+				-moz-appearance: none
+				-ms-appearance: none
+				appearance: none!important
+
+//card page styles
+.card_page
+	h1
+		padding-left: 15px
+		margin-top: 15px
+		margin-bottom: 49px
+		font-size: 32px
+		font-weight: bold
+		+Intro-Regular
+		color: $orange
+		text-transform: uppercase
+	.sl_2 .sl2_slide
+		margin-right: 2px
+		width: 72px !important
+		margin-right: 10px
+		border: 1px solid $orange
+	.sl_2 .slick-list
+		max-width: 250px
+		margin: 0 auto
+		padding-left: 5px
+		width: 250px
+	.sl_1_slide
+		margin-bottom: 20px
+		img
+			margin: 0 auto
+		.cp_sl_content
+			position: absolute
+			top: 0px
+			right: 18%
+	.cp_content
+		.cp_art
+			padding-top: 6px
+			padding-left: 16px
+			font-size: 21px
+			font-weight: 100
+			+Intro-Regular
+			text-transform: uppercase
+		.tabs
+			margin-top: 15px
+			padding-left: 16px
+			.nav-tabs
+				border: none
+			li.active
+				a
+					text-transform: uppercase
+					font-size: 13px
+					+Muller-b
+					background-color: #fff
+					padding-top: 15px
+					padding-bottom: 15px
+					margin-right: 47px
+					border: 3px solid #ff8357
+					border-color: #ff8357
+					border-radius: 0px
+					color: #ff8357
+					&:hover
+						border-color: #f36f19
+						color: #f36f19
+			.cp_btn1
+				//max-width: 202px
+				width: 202px
+				padding-top: 15px
+				padding-bottom: 15px
+				margin-right: 47px
+				text-transform: uppercase
+				font-size: 13px
+				+Muller-b
+				background-color: #fff
+				border: 3px solid #8c8c8c
+				border-color: #8c8c8c
+				border-radius: 0px
+				color: #8c8c8c
+				text-align: center
+				&:hover
+					border-color: #666666
+					color: #666666
+		.cp_text
+			min-height: 85px
+			font-size: 16px
+			font-weight: 100
+			+Intro-Regular
+			padding-top: 17px
+			padding-left: 0px
+		.cp_select
+			p
+				padding-top: 21px
+				padding-left: 16px
+				font-size: 21px
+				font-weight: 100
+				+Intro-Regular
+			.cp_sel
+				margin-left: 18px
+				padding-left: 58px
+				padding-right: 3px
+				margin-top: 5px
+				max-width: 450px
+				width: 100%
+				min-height: 47px
+				overflow: hidden
+				background: url('../img/cp_arr_select.png') no-repeat right #fefefe
+				background-size: 3%
+				background-position-x: 95%
+				background-color: #fff
+				-webkit-border-radius: 3px
+				border-radius: 3px
+				-webkit-box-shadow: inset 0px 0px 10px 1px #fefefe
+				box-shadow: inset 0px 0px 10px 1px #fefefe
+				font-size: 21px
+				font-weight: 100
+				+Intro-Regular
+				-webkit-appearance: none
+				-moz-appearance: none
+				-ms-appearance: none
+				appearance: none!important
+			.cp_sel::-ms-expand
+				background: url('../img/cp_arr_select.png') no-repeat right #fefefe
+				border: none
+				color: #fff
+		.cp_price
+			width: 100%
+			padding-top: 63px
+			margin-bottom: 4px
+			font-size: 44px
+			font-weight: bold
+			+Intro-Regular
+			color: #8c8c8c
+			text-transform: uppercase
+			span
+				color: $orange
+			.cp_rub
+				+Intro-Regular
+				font-weight: 100
+		a.cp_price_a
+			color: #81868c
+			text-decoration: underline
+		.form-inline
+			padding-top: 66px
+			text-align: left
+			input
+				width: 65px
+				font-size: 40px
+				height: 57px
+			button
+				max-width: 249px
+				width: 100%
+				text-transform: uppercase
+				color: #fff
+				font-size: 23px
+				margin-right: 0px
+				margin-left: 13px
+				padding-top: 12px
+				padding-bottom: 12px
+				border-radius: 0px
+				background-color: $orange
+
+		.cp_hrefs
+			margin-top: 30%
+			display: block
+			width: auto
+			text-align: center
+			.cp_diller, .cp_servis, .cp_set, .cp_delivery
+				width: 23%
+				display: inline-block
+				padding-bottom: 5%
+				a
+					font-size: 22px
+					font-weight: 100
+					+Intro-Regular
+					color: #81868c
+					img
+						width: 29%
+						float: left
+						margin-left: -5px
+						margin-top: -7px
+						margin-right: -35px
+			.cp_set
+				margin-left: -12px
+				margin-right: 20px
+				a
+					img
+						margin-right: -9px
+			.cp_delivery
+				margin-right: -20px
+				a
+					img
+						margin-right: -7px
+		.cp_reviews
+			max-width: 794px
+			width: 100%
+			padding-top: 15px
+			padding-bottom: 10%
+			border: 1px solid #e5e4e4
+			background-color: #e5e4e4
+			height: auto
+			margin-bottom: 17%
+			h5
+				font-size: 18px
+				font-weight: 300
+				+Intro-Regular
+				text-transform: uppercase
+				padding-left: 14px
+				margin-bottom: 26px
+			hr
+				height: 1px
+				width: 97%
+				background-color: $orange
+				border: 1px solid #fff
+			.cp_reviews_text
+				height: auto
+				font-size: 16px
+				font-weight: 300
+				+Intro-Regular
+			.cp_reviews_btn
+				text-transform: uppercase
+				color: $orange
+				border: 3px solid $orange
+				background-color: #fff
+				padding-top: 16px
+				padding-left: 36px
+				padding-bottom: 16px
+				padding-right: 36px
+				transition: all .4s ease
+				&:hover
+					background-color: $orange
+					color: #fff
+					transition: all .4s ease
+//OPLATA page styles
+.oplata_left_block
+	padding-top: 0
+.oplata_content
+	.pay_block
+		margin-bottom: 40px
+		.breadcrumb
+			padding-top: 0
+			margin-left: -15px
+		h1
+			padding-left: 0px
+			margin-top: 0px
+			margin-bottom: 20px
+			font-size: 32px
+			font-weight: bold
+			+Intro-Regular
+			color: #7c7c7c
+			text-transform: uppercase
+		p
+			margin-top: 15px
+			font-size: 16px
+			font-weight: 100
+			+Intro-Regular
+			color: #7c7c7c
+
+		h5
+			margin-top: 30px
+			font-size: 18px
+			font-weight: bold
+			+Intro-Regular
+			color: #000
+			letter-spacing: 1px
+		ol.ol_pay
+			counter-reset: myCounter
+			padding-left: 0
+			li
+				list-style: none
+				color: #7c7c7c
+				a
+					text-decoration: underline
+				span
+					color: #000
+			li:before
+				counter-increment: myCounter
+				content: counter(myCounter)
+				color: #fff
+				background: $orange
+				position: relative
+				top: -2px
+				display: inline-block
+				text-align: center
+				margin: 6px 8px 6px -2px
+				line-height: 16px
+				width: 16px
+				height: 16px
+				border-radius: 10px
+				font-size: 10px
+//SEARCH PAGE STYLES
+.search_left_block
+	padding-top: 0
+.search_content
+	h1
+		padding-left: 0
+		font-weight: 800
+		font-size: 36px
+
+//USER PAGE STYLES
+.user_block
+	.breadcrumb
+		margin-left: -32px
+	h5
+		margin-left: -17px
+		font-size: 26px
+		font-weight: 800
+		+Intro-Regular
+		text-transform: uppercase
+		color: #7c7c7c
+		a
+			color: #9fa1a3
+			text-decoration: none
+			&:hover
+				color: #7c7c7c
+	.exit
+		display: inline-block
+		width: 50%
+		color: #9fa1a3
+	.bonus
+		display: inline-block
+		text-align: right
+		width: 46%
+		a
+			+Intro-Regular
+			color: #ff6856
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+	.user_info
+		margin-top: 40px
+		font-size: 14px
+		font-weight: 100
+		+Intro-Regular
+		color: #7b7c7e
+		h5
+			margin-left: 0
+			font-size: 16px
+			color: #000
+		.u_name,
+		.u_phone,
+		.u_email,
+		.u_adress,
+		.u_discount
+			margin-left: 0
+			min-width: 150px
+			width: 100%
+			padding: 10px 0
+			font-size: 15px
+			font-weight: 100
+			+Intro-Regular
+			border-top: 1px solid #c0c0c0
+			.col-xs-3, .col-xs-4
+				padding-left: 0
+				padding-right: 20px
+			.u_edit_a
+				text-align: right
+				display: none
+				//visibility: hidden
+				a
+					color: #ff6856
+		.u_discount
+			border-bottom: 1px solid #c0c0c0
+			//&:hover, &:focus, &:active
+			//	.u_choice_discount
+			//		display: block
+		.u_choice_discount
+			margin-top: 25px
+			text-align: right
+			//display: none
+		.v_check_list
+			margin-top: 20px
+			.checkbox_inp
+				display: none
+			.checkbox-custom, .label
+				display: inline-block
+				vertical-align: middle
+			.checkbox-custom
+				position: absolute
+				left: 0
+				top: 2px
+				width: 16px
+				height: 16px
+				border: 1px solid #156594
+				border-radius: 0
+			.label
+				margin-top: 0
+				text-align: left
+				padding-left: 30px
+				color: #333
+				font-size: inherit
+				font-weight: 500
+				font-family: inherit
+			.list-unstyled
+				margin-left: 0px
+				li
+					display: inline-block
+					color: #7c7c7c
+					div
+						margin-right: 16px
+			.checkbox_inp:checked + .checkbox-custom:before
+				content: "\f00c"
+				font-family: FontAwesome, sans-serif
+				display: block
+				position: absolute
+				top: -3px
+				right: 3px
+				left: 0px
+				border-radius: 2px
+			.checkbox label
+				padding-left: 0
+		.u_skidka
+			margin-top: 20px
+			padding-left: 15px
+			font-size: 15px
+			.percent
+				font-weight: 800
+				color: #000
+			a
+				margin-left: 16px
+				font-size: 14px
+				color: #ff6856
+			span.percent_begin
+				width: 96%
+				float: left
+			.progress
+				max-width: 97%
+				border: 1px solid #c0c0c0
+				border-radius: 2px
+				.progress-bar
+					background-color: #ff6856
+		.u_skidka_bottom
+			padding-bottom: 20px
+			div
+				padding: 10px 0
+				padding-left: 17px
+				font-size: 15px
+				span
+					display: block
+			.u_recomend
+				display: none
+//BASKET PAGE STYLES
+.basket_content
+	margin-bottom: 40px
+	h5
+		font-size: 25px
+		font-weight: 800
+		+Intro-Regular
+		color: #737980
+		text-transform: uppercase
+	.basket_block
+		font-size: 25px
+		font-weight: 800
+		+Intro-Regular
+		.b_number
+			display: inline-block
+			width: 49%
+			p
+				font-size: 15px
+				font-weight: 100
+		.b_back_to_choice
+			width: 49%
+			text-align: right
+			display: inline-block
+			a
+				font-size: 13px
+				font-weight: 100
+				color: #ff8357
+				i
+					margin-left: 5px
+		.table
+			td
+				vertical-align: middle
+				min-width: 90px
+				p
+					margin-bottom: 1px
+					a
+						font-size: 16px
+						font-weight: 100
+						color: inherit
+				img
+					width: 66px
+				.form-control, span.price
+					font-weight: 100
+					padding: 0
+					width: 70px
+					margin-top: 5px
+				span.price
+					font-size: 17px
+					.fa-rub
+						font-size: 17px
+				a.basc_del
+					color: red
+					font-weight: bold
+					font-size: 28px
+					display: block
+					text-align: right
+					&:hover
+						text-decoration: none
+						color: #737980
+			.b_td_end
+				text-align: right
+				font-size: 20px
+				font-weight: 500
+		.table-container
+			width: 100%
+			overflow-x: auto
+			_overflow: auto
+			margin: 0 0 1em
+
+	.black
+		color: #000
+	.blue
+		color: #0072C7
+		text-transform: none
+		font-weight: 100
+	.b_quest
+		position: absolute
+		right: -6px
+		top: 19px
+		font-size: 12px
+		+Intro-Regular
+		border: 1px solid #ff8357
+		color: #ff8357
+		padding-left: 2px
+		padding-right: 2px
+		line-height: normal !important
+	.v_check_list
+		padding-top: 8px
+
+	ul.b_ul_delivery
+		li
+			margin-top: 16px
+			margin-bottom: 20px
+	.checkbox_inp
+		display: none
+	.checkbox-custom
+		position: absolute
+		left: 0px
+		top: 6px
+		width: 13px
+		height: 13px
+		border: 1px solid #ff8357
+		border-radius: 2px
+	.checkbox-custom,.label
+		display: inline-block
+		vertical-align: middle
+	.label
+		p
+			margin-top: 10px
+			color: #737980
+			white-space: normal
+	span.label
+		display: block
+		margin-top: 0px
+		text-align: left
+		padding-left: 40px
+		font-size: 14px
+		font-weight: 300
+		+Intro-Regular
+		color: #000
+		span
+			display: block
+
+	.checkbox_inp:checked + .checkbox-custom:before
+		content: "\f00c"
+		font-family: FontAwesome, sans-serif
+		display: block
+		position: absolute
+		top: -5px
+		right: 3px
+		left: 0px
+		border-radius: 2px
+		color: #ff8357
+	.checkbox
+		label
+			padding-left: 0
+		select
+			margin-top: 8px
+			margin-bottom: 8px
+		span
+			line-height: 20px
+.b_delivery_content_1
+	margin-top: 30px
+	.bdc_data
+		font-size: 16px
+	.captcha
+		margin-top: 10px
+		margin-bottom: 10px
+	.inp_captcha
+		width: 50%
+		display: inline-block
+	.btn-primary
+		float: right
+		background: #ff8357
+		border-color: #ff8357
+.b_delivery_content
+	margin-bottom: 40px
+
+@media (min-width: 1200px)
+	.vitrina_content
+		width: 887px
+		margin-left: -40px
+		.v_selects_conclusion
+			margin-left: -113px
+			.vsc_sel
+				padding-left: 3px
+				max-width: 178px
+				width: 100%
+				background-position-x: 152px
+		.va_list
+			width: 100%
+			padding-top: 37px
+			margin-left: -11px
+			.bak_wester
+				margin-bottom: 113px
+				font-size: 11px
+				.bw_img
+					margin: -5px 44px 0
+	.pay_block
+		margin-left: -30px
+	.search_content
+		.breadcrumb
+			li
+				a
+					margin-left: -15px
+		.va_list
+			padding-top: 26px
+			margin-left: 0
+		.v_wester_img
+			text-align: center
+		.bak_wester
+			p.bw_header
+				text-align: center
+				padding-right: 0
+			.bw_discription
+				table
+					td
+						min-width: 150px
+
+@media (max-width: 1560px)
+	.block_fixed
+		.bf_call, .bf_question
+			opacity: 0.5
+			&:hover
+				opacity: 1
+	.carousel-inner
+		max-width: 1171px
+		width: 100%
+	.carousel-indicators
+		left: 50%
+	.h2_novelty
+		padding-left: 0
+	.all_novelty button
+		margin-left: 0
+
+
+
+@media (max-width: 1200px)
+	.menu_f
+		margin-top: 5%
+		margin-bottom: 0px
+		.logo
+			width: 39%
+		.searchBlock
+			margin-top: 1%
+		.header_top__right
+			margin-top: 0%
+	.header_top .logo
+		width: 45%
+		margin-top: 9px
+	.header_top .searchBlock
+		margin-right: 0
+	.header_top .header_top__right
+		font-size: 16px
+		margin-top: 38px
+	.navbar-default .navbar-collapse li
+		width: 13.9%
+		font-size: 12px
+	.slick-prev
+		left: 0px
+	.slick-next
+		right: 0px
+
+	footer
+		.footer_content
+			.container
+				margin: 0 auto
+			.footer_menu_left
+				width: 41%
+				ul
+					padding-left: 0
+				.fml_ul_2, .fml_ul_3
+					padding-left: 10px
+			.footer_menu_right
+				width: 60%
+				.fmr_ul_2
+					padding-left: 10px
+				.banners_block
+					margin-left: 0
+	.menu_orange
+		li.menu_orange_li
+			width: 100%
+	.vitrina_content
+		width: 100%
+		margin-left: 0px
+		.v_selects_conclusion
+			margin-left: 0
+		.va_list
+			width: 100%
+			padding-top: 37px
+			margin-left: -11px
+			.bak_wester
+				margin-bottom: 55%
+				font-size: 10px
+				.bw_img
+					margin: 0 auto
+				.bak_wester_price
+					margin-top: 0
+	.left_block
+		li.menu_orange_li:after
+			left: 90%
+		li.menu_orange_li:hover:after
+			left: 90%
+	.card_page
+		.sl_2 .slick-list
+			width: 85%
+		.cp_content
+			.cp_text
+				min-height: 110px
+			.form-inline
+				input
+					width: 50px
+					font-size: 30px
+					height: 58px
+				button
+					margin-left: 0
+					width: 65%
+	.card_page
+		.cp_content
+			.cp_hrefs
+				.cp_delivery, .cp_diller, .cp_servis, .cp_set
+					a
+						font-size: 20px
+						img
+							width: 25%
+							margin-top: -1px
+			.cp_reviews
+				padding-bottom: 17%
+				.cp_reviews_btn
+					width: 100%
+					padding-left: 17px
+					padding-right: 17px
+
+	.oplata_left_block, .oplata_content
+		margin-top: 40px
+	.search_left_block
+		margin-top: 40px
+	.search_content
+		margin-top: 40px
+
+	.user_block
+		.breadcrumb
+			margin-top: 40px
+			margin-left: -15px
+		h5
+			margin-left: 0
+		.user_info
+			padding-left: 15px
+	.b_delivery_content
+		margin-top: 40px
+	.b_delivery_content_1
+		.inp_captcha
+			width: 100%
+			margin-bottom: 10px
+		.btn-primary
+			float: none
+			width: 100%
+
+
+@media (max-width: 992px)
+	.menu_f
+		.searchBlock
+			margin-top: 0
+			.form-group
+				margin-bottom: 9px
+	.navbar-header
+		float: none
+
+	.navbar-left,.navbar-right
+		float: none !important
+
+	.navbar-toggle
+		display: block
+
+	.navbar-collapse
+		border-top: 1px solid transparent
+		box-shadow: inset 0 1px 0 rgba(255,255,255,0.1)
+
+	.navbar-fixed-top
+		top: 0
+		border-width: 0 0 1px
+
+	.navbar-collapse.collapse
+		display: none!important
+
+	.navbar-nav
+		float: none!important
+		margin-top: 7.5px
+
+	.navbar-nav>li
+		float: none
+
+	.navbar-nav>li>a
+		padding-top: 10px
+		padding-bottom: 10px
+		padding-top: 0
+		margin-top: 0
+
+	.navbar-default .navbar-collapse li
+		display: block
+		width: 20%
+		max-width: 100%
+		font-size: 14px
+		text-align: left
+		margin: 0 auto
+		margin-bottom: 13px
+		&:first-child
+			margin: 0 auto
+			margin-bottom: 13px
+	.collapse.in
+		display: block !important
+
+	.header_top
+		.header_top__right
+			margin-top: 0
+	.header_middle
+		li.orange
+			width: 100%
+			margin-bottom: 20px
+			.img_block_menu
+				width: 100%
+				background-color: $orange
+				min-height: 42px
+			p
+				margin-top: -30px
+				text-align: center
+				color: #fff
+		li.darkblue
+			width: 100%
+			.img_block_menu
+				width: 100%
+				background-color: $darkblue
+				min-height: 42px
+			p
+				margin-top: -30px
+				text-align: center
+				color: #fff
+		li.blue
+			width: 100%
+			.img_block_menu
+				width: 100%
+				background-color: $blue
+				min-height: 42px
+			p
+				margin-top: -30px
+				text-align: center
+				color: #fff
+		li.purple
+			width: 100%
+			.img_block_menu
+				width: 100%
+				background-color: $purple
+				min-height: 42px
+			p
+				margin-top: -30px
+				text-align: center
+				color: #fff
+		li.yellow
+			width: 100%
+			.img_block_menu
+				width: 100%
+				background-color: $yellow
+				min-height: 42px
+			p
+				margin-top: -30px
+				text-align: center
+				color: #fff
+		li.drkgreen
+			width: 100%
+			.img_block_menu
+				width: 100%
+				background-color: $darkgreen
+				min-height: 42px
+			p
+				margin-top: -30px
+				text-align: center
+				color: #fff
+		li.green
+			width: 100%
+			.img_block_menu
+				width: 100%
+				background-color: $green
+				min-height: 42px
+			p
+				margin-top: -30px
+				margin-left: auto
+				margin-right: auto
+				width: 46%
+				text-align: center
+				color: #fff
+				br
+					display: none
+	ul.menu_orange
+		width: 100%
+		min-width: 300px
+		margin-top: 0px
+		position: relative
+		padding-left: 0
+		background-color: #fff
+		border: 0
+		margin-left: 0
+		li.menu_orange_li
+			list-style-image: none
+			line-height: 18px
+			padding-left: 0px
+			padding-right: 0px
+			max-width: 98%
+			width: 100%
+			text-align: center
+			a
+				font-size: 12px
+				padding-left: 10px
+	ul.menu_orange_accordion
+		margin-left: 0
+		width: 100%
+		padding-left: 0
+		.mo_accord_li
+			margin-left: 5px
+			&:first-child
+				margin-left: 5px
+	.batary,
+	.price_batary span,
+	.price_batary,
+	.price_batary span.pb_span
+		font-size: 30px
+
+	.batary, .price_batary span, .price_batary, .price_batary span.pb_span
+		font-size: 26px
+
+	footer
+		.footer_content
+			.footer_menu_left
+				max-width: 100%
+				width: 100%
+				.fml_ul_1
+					width: 40%
+				.fml_ul_2, .fml_ul_3
+					width: 29%
+			.footer_menu_right
+				width: 100%
+				max-width: 100%
+				margin-top: 4%
+				.fmr_ul_1
+					width: 41%
+				.fmr_ul_2
+					width: 29%
+				.banners_block
+					width: 100%
+					text-align: center
+					margin-top: 4%
+					.fmr_banner_1
+						margin-left: 0
+			.footer_bottom
+				font-size: 12px
+	//vitrina page
+	.v_conditions
+		text-align: left
+		width: 50%
+		margin: 0 auto
+		.v_consultations, .v_delivery, .v_discounts, .v_montag, .v_pay
+			padding-bottom: 20px
+			display: block
+			margin: 0 auto
+			width: 100%
+			text-align: left
+			.vhb_img
+				text-align: center
+				img
+					float: none
+			.vhb_txt
+				width: 100%
+				padding: 0
+				text-align: center
+	.vitrina_aside, .left_block
+		max-width: 100%
+		.v_filtr
+			padding-top: 4%
+			padding-bottom: 21%
+		.v_brand
+			border-bottom: 0
+			padding-bottom: 19px
+		.v_buttons
+			padding-bottom: 33px
+	.left_block
+		text-align: center
+		.navbar-nav
+			width: 100%
+			margin: 0 auto
+			&>li.orange
+				text-align: center
+				background-color: $orange
+			&>li.darkblue
+				text-align: center
+				background-color: $darkblue
+			&>li.blue
+				text-align: center
+				background-color: $blue
+			&>li.purple
+				text-align: center
+				background-color: $purple
+			&>li.yellow
+				text-align: center
+				background-color: $yellow
+			&>li.drkgreen
+				text-align: center
+				background-color: $darkgreen
+			&>li.green
+				text-align: center
+				background-color: $green
+		.mt01
+			a
+				padding-top: 1px
+				margin-top: 1px
+		.menu_orange
+			max-width: 720px
+			width: 100%
+			li.menu_orange_li
+				max-width: 710px
+				width: 100%
+				text-align: center
+		.menu_orange_accordion
+			margin: 0 auto
+			max-width: 720px
+			width: 100%
+			li.mo_accord_li
+				text-align: center
+	.v_accessories
+		h1
+			text-align: center
+			padding-left: 0
+		.vss_price, .vss_conclusion
+			width: 50%
+			margin: 0 auto
+	.vitrina_content
+		margin-top: 20px
+		.va_list
+			margin-left: 0
+			.bak_wester
+				max-width: 100%
+				width: 100%
+				margin-bottom: 20%
+				.v_wester_img
+					text-align: center
+				.bw_img
+					padding-bottom: 10%
+	.card_page
+		.sl2_slide
+			margin-bottom: 0
+		.cp_content
+			.cp_hrefs
+				text-align: center
+				margin-top: 15%
+				.cp_delivery, .cp_diller, .cp_servis, .cp_set
+					padding-bottom: 2%
+					a
+						font-size: 18px
+			.form-group
+				display: inline-block
+				width: 10%
+			.form-inline
+				button
+					margin-top: 0px
+			.cp_reviews
+				padding-bottom: 0
+				.col-md-4
+					text-align: center
+				.cp_reviews_btn
+					width: 50%
+					margin: 5% auto
+
+	.oplata_left_block, .oplata_content
+		margin-top: 20px
+	.search_htr
+		margin-top: 36px
+	.search_left_block
+		margin-top: 20px
+	.search_content
+		margin-top: 20px
+		.container
+			width: auto
+		h1
+			font-size: 28px
+		.breadcrumbs
+			margin-left: -15px
+	.b_delivery_content
+		margin-top: 0
+	.b_delivery_content_1
+		.inp_captcha
+			width: 50%
+			margin-bottom: 10px
+		.btn-primary
+			float: right
+			width: auto
+@media (max-width: 768px)
+	.menu_f
+		.searchBlock
+			width: 100%
+			max-width: 100%
+			margin-right: 0
+			padding-left: 16px
+			padding-right: 16px
+			i
+				right: 26px
+		.logo
+			width: 39%
+			text-align: center
+			float: none
+			margin: 0 auto
+	.block_fixed .bf__text
+		font-size: 16px
+		padding-top: 10%
+	.header_top
+		.logo
+			float: none
+			margin: 9px auto
+		.searchBlock
+			float: none
+			margin: 0 auto
+		.header_top__right
+			margin-top: 30px
+			margin-left: 0
+			.room, .contacts
+				margin-left: 0
+	.navbar-default .navbar-toggle:hover
+		background-color: $orange
+	.navbar-nav
+		margin: 7.5px auto
+	.navbar-default .navbar-collapse li
+		width: 100%
+	.header_middle li.green p
+		margin-top: -30px
+		width: 92%
+
+	.bak_wester input
+		float: left
+		margin-left: 22px
+		margin-right: 0
+	.bak_wester
+		margin: 0 auto
+	.bak_wester .btn-danger
+		max-width: 59%
+		margin-left: -23px
+		width: 100%
+	footer
+		padding-left: 10px
+		padding-right: 10px
+		.footer_bottom
+			clear: both
+			padding-top: 20px
+			text-align: center
+	.v_conditions .v_consultations,
+	.v_delivery,
+	.v_discounts
+		padding-bottom: 5%
+		img
+			width: 20%
+	.v_montag,
+	.v_pay
+		padding-bottom: 3%
+		img
+			width: 15%
+	.mL
+		margin-left: 0
+	.vitrina_aside
+		.v_filtr
+			border-bottom: 0px
+			padding-bottom: 18%
+			.col-sm-6
+				padding-left: 15px
+				padding-right: 15px
+				span.filter__slider-text
+					margin-right: 0
+			.form-inline
+				text-align: left
+				.form-group, .form-control
+					max-width: 100%
+		.v_brand, .v_max_head, .v_type_head, .v_type_pumb
+			border-bottom: 0px
+			background-image: none
+	#carousel-example-generic_vitrina
+		.sl_content
+			margin-top: 0
+		.price_batary
+			font-size: 18px
+			span
+				font-size: 18px
+			span.pb_span
+				font-size: 20px
+	.v_accessories .v_selects
+		.v_selects_conclusion,
+		.v_selects_sort
+			width: 100%
+			span
+				padding-bottom: 12px
+			.vss_price, .vss_conclusion
+				width: 100%
+	.card_page
+		.sl_2 .slick-list
+			padding-left: 8px
+		.cp_content
+			.form-inline button
+				margin-top: -13px
+			.cp_text
+				min-height: 100px
+	.oplata_content .pay_block .breadcrumb
+		margin-left: -15px
+	.search_content
+		.slider_novelty_slide
+			width: 50%
+			margin: 0 auto
+			.bak_wester
+				padding-left: 0
+				p.bw_header
+					text-align: center
+					padding-right: 0
+				.table>tbody>tr>td
+					min-width: 150px
+@media (max-width: 600px)
+	.navbar-default .navbar-collapse li
+		width: 100%
+		margin: 0 auto
+		&:first-child
+			margin: 0 auto
+	.header_middle li.green p
+		margin-top: -41px
+		width: 46%
+	.bak_wester
+		margin: 0 auto
+		.btn-danger
+			max-width: 56%
+			margin-left: -15px
+			width: 100%
+	.batary,
+	.price_batary,
+	.price_batary span,
+	.price_batary span.pb_span
+		font-size: 18px
+	.price_batary, .batary
+		padding-top: 10px
+		padding-bottom: 10px
+		padding-left: 14px
+		padding-right: 55px
+
+	.vitrina_aside .v_filtr
+		padding-bottom: 10%
+	.v_conditions
+		width: 100%
+
+	.card_page
+		.cp_content
+			.cp_art
+				padding-left: 0
+			.tabs
+				padding-left: 0
+				.nav-tabs>li
+					margin-right: 5px
+					.cp_btn1
+						width: 100%
+						max-width: 155px
+			.btn_more
+				padding-left: 0
+
+			.cp_text
+				padding-left: 0
+				min-height: 150px
+			.cp_select
+				p
+					padding-left: 0
+				.cp_sel
+					margin-left: 0
+			.cp_hrefs
+				text-align: center
+				margin-top: 15%
+				.cp_delivery, .cp_diller, .cp_servis, .cp_set
+					width: 44%
+					a
+						font-size: 30px
+						img
+							width: 30%
+							float: none
+							margin-right: auto
+							margin-left: auto
+							display: block
+				.cp_delivery
+					margin-right: 0
+				.cp_set
+					margin-left: 0
+					margin-right: 0
+			.form-group
+				display: block
+				width: 100%
+			.form-inline
+				input
+					width: 100%
+					text-align: center
+				button
+					width: 100%
+					max-width: 100%
+					margin-top: 0px
+					margin-right: 0
+	.search_content
+		.bak_wester .btn-danger
+			max-width: 69%
+			margin-left: 3px
+			width: 100%
+	.basket_content
+		.basket_block
+			.table td p
+				line-height: 16px
+@media (max-width: 480px)
+	.navbar-default .navbar-collapse li
+		width: 100%
+		margin-bottom: 13px
+		&:first-child
+			margin-bottom: 13px
+	ul.menu_orange
+		li.menu_orange_li
+			margin: 0 auto
+			&:first-child
+				margin: 0 auto
+	.batary, .price_batary span, .price_batary, .price_batary span.pb_span
+		font-size: 14px
+	.price_batary, .batary
+		padding-top: 10px
+		padding-bottom: 10px
+		padding-left: 10px
+		padding-right: 15px
+	.v_accessories
+		.v_selects
+			.v_selects_conclusion .vsc_sel
+				max-width: 100%
+				background-position-x: 96%
+			.v_selects_sort .vsc_sel
+				max-width: 100%
+				background-position-x: 96%
+	.v_conditions
+		padding-left: 0
+	.bak_wester p.bw_header
+		padding-right: 0
+	.vitrina_content
+		margin-top: 20px
+	.card_page
+		h1
+			padding-left: 0
+			text-align: center
+		.cp_content
+			.cp_art
+				text-align: center
+			.tabs
+				.nav-tabs
+					text-align: center
+					>li
+						float: none
+						display: inline-block
+						margin: 0
+						.cp_btn1
+							margin-bottom: 6px
+							width: 155px
+							margin-right: 0
+			.cp_price
+				font-size: 38px
+			.btn_more
+				text-align: center
+			.cp_select
+				.cp_sel
+					padding-left: 3%
+			.cp_hrefs
+				text-align: center
+				margin-top: 15%
+				.cp_delivery, .cp_diller, .cp_servis, .cp_set
+					a
+						font-size: 18px
+			.cp_reviews
+				.cp_reviews_btn
+					width: 100%
+	footer
+		.footer_content
+			text-align: center
+			ul
+				li
+					margin-left: 0
+			.footer_menu_left, .footer_menu_right
+				margin-top: 0
+			.fml_ul_1, .fml_ul_2, .fml_ul_3
+				width: 100%!important
+				padding-left: 0!important
+			.fmr_ul_1, .fmr_ul_2
+				width: 100%!important
+				padding-left: 0!important
+			.footer_menu_right
+				.banners_block
+					width: 50%
+					margin: 0 auto
+					.fmr_banner_1, .fmr_banner_2
+						margin: 1% auto
+						max-width: 100%
+	.search_content .slider_novelty_slide .bak_wester .table>tbody>tr>td
+		min-width: 100px
+		padding-left: 0
+	.search_content
+		.bak_wester input.form-control
+			margin-left: 0
+	.user_block
+		.user_info
+			padding-left: 15px
+			padding-right: 25px
+			.u_adress, .u_discount, .u_email, .u_name, .u_phone
+				font-size: 12px
+			.u_input_dicount
+				min-width: 130px
+				margin-top: 45px
+			.u_skidka
+				span.percent_begin
+					width: 90%
+				a
+					display: block
+					margin-left: 0
+	.basket_content
+		.basket_block
+			.b_back_to_choice, .b_number
+				width: 100%
+				text-align: left
+			.table
+				td
+					img
+						width: 100% !important
+						min-width: 50px

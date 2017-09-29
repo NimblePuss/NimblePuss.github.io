@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Teploxod</title>
+
+	<meta name="description" content="Title" /><!-- Description of the page -->
+	<meta name="author" content="Shpikovskaya Olesya"><!-- Author Name -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"><!-- Bootstrap Style -->
+	<link rel="stylesheet" href="css/bootstrap-slider.min.css"><!-- Bootstrap Style -->
+	<link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+	                                           <!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">-->
+	                                           <!--<link rel="stylesheet" href="css/jquery.mobile.custom.theme.min.css">-->
+	                                           <!--<link rel="stylesheet" href="css/jquery.mobile.custom.structure.min.css">-->
+	<link rel="stylesheet" href="css/font-awesome.min.css"><!-- Custom Style -->
+	<link rel="stylesheet" href="slick/slick.css"><!-- Slick Style -->
+	<link rel="stylesheet" href="slick/slick-theme.css"><!-- Slick Theme Style -->
+	<link rel="stylesheet" href="css/style.css"><!-- Custom Style -->
+</head>
+<body>
+<div id="menu_fixed">
+	<div class="container">
+		<div class="row">
+			<div class="menu_f">
+				<div class="col-md-9">
+					<div class="header_top__left">
+						<div class="logo">
+							<a href="#">
+								<img src="img/header/logo.png" alt="logo">
+							</a>
+						</div>
+						<form action="" method="POST" role="form">
+							<div class="form-group searchBlock">
+								<input type="search" class="form-control" name="search" placeholder="Поиск товаров">
+								<i class="fa fa-search"></i>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 ">
+					<div class="header_top__right">
+						<div class="row">
+							<div class="col-xs-6 col-md-6">
+								<div class="basket">
+									<a href="basket.html" target="_blank">
+										<img src="img/header/basket.png" alt="basket">
+										Корзина
+									</a>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-6">
+								<div class="room">
+									<a href="user.html" target="_blank">
+										<img src="img/header/room.png" alt="room">
+										Кабинет
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="tel">
+									<a href="tel:2051340">Тел.: 205-13-40</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+<!--header begin-->
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="header_top">
+				<div class="col-md-9">
+					<div class="header_top__left">
+						<div class="logo">
+							<a href="#">
+								<img src="img/header/logo.png" alt="logo">
+							</a>
+						</div>
+						<form action="" method="POST" role="form">
+							<div class="form-group searchBlock">
+								<input type="search" class="form-control" name="search" placeholder="Поиск товаров">
+								<i class="fa fa-search"></i>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-3 ">
+					<div class="header_top__right">
+						<div class="row">
+							<div class="col-xs-6 col-md-6">
+								<div class="basket">
+									<a href="basket.html" target="_blank">
+										<img src="img/header/basket.png" alt="basket">
+										Корзина
+									</a>
+								</div>
+								<div class="tel">
+									<a href="tel:2051340">Тел.: 205-13-40</a>
+								</div>
+							</div>
+							<div class="col-xs-6 col-md-6">
+								<div class="room">
+									<a href="user.html" target="_blank">
+										<img src="img/header/room.png" alt="room">
+										Кабинет
+									</a>
+								</div>
+								<div class="contacts">
+									<a href="#">
+										<img src="img/header/contacts.png" alt="contacts">
+										Контакты
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12">
+			<div class="row">
+				<div class="header_middle">
+					<nav class="navbar navbar-default" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+								<li class="orange drop">
+									<a href="javascript:void(0);">
+										<div class="img_block_menu">
+											<img src="img/header/menu01.jpg" alt="" class="hidden-xs hidden-sm">
+											<img src="img/lm_01.jpg" alt="" class="hidden-lg hidden-md">
+										</div>
+										<p>отопление</p>
+									</a>
+									<ul class="menu_orange">
+										<li class="menu_orange_li"><a href="javascript:void(0);">насосы для отопления</a>
+											<ul class="menu_orange_accordion">
+												<li class="mo_accord_li">
+													<a href="vitrina.html" target="_blank">Принадлежности</a>
+												</li>
+												<li class="mo_accord_li"><a href="card.html" target="_blank">Alpha</a></li>
+												<li class="mo_accord_li"><a href="#">Magna</a></li>
+												<li class="mo_accord_li"><a href="#">Ups</a></li>
+												<li class="mo_accord_li"><a href="#">Up</a></li>
+											</ul>
+										</li>
+										<li class="menu_orange_li"><a href="javascript:void(0);">радиаторы</a>
+											<ul class="menu_orange_accordion">
+												<li class="mo_accord_li">
+													<a href="#">Принадлежности</a>
+												</li>
+												<li class="mo_accord_li"><a href="#">Alpha</a></li>
+												<li class="mo_accord_li"><a href="#">Magna</a></li>
+												<li class="mo_accord_li"><a href="#">Ups</a></li>
+												<li class="mo_accord_li"><a href="#">Up</a></li>
+											</ul>
+										</li>
+										<li class="menu_orange_li"><a href="#">котельное оборудование</a></li>
+										<li class="menu_orange_li"><a href="#">конвекторы</a></li>
+										<li class="menu_orange_li"><a href="#">МЕМБРАННЫЕ БАКИ ДЛЯ СИСТЕМ ВОДОСНАБЖЕНИЯ И ОТОПЛЕНИЯ</a></li>
+										<li class="menu_orange_li"><a href="#">СТАБИЛИЗАТОРЫ НАПРЯЖЕНИЯ</a></li>
+										<li class="menu_orange_li"><a href="#">БОЙЛЕРЫ КОСВЕННОГО НАГРЕВА</a></li>
+										<li class="menu_orange_li"><a href="#">ТЕПЛОВЫЕ ПУШКИ</a></li>
+										<li class="menu_orange_li"><a href="#">ТЕПЛОНОСИТЕЛЬ</a></li>
+										<li class="menu_orange_li"><a href="#">ИНФРАКРАСНЫЕ ОБОГРЕВАТЕЛИ</a></li>
+										<li class="menu_orange_li"><a href="#">ТЕПЛЫЙ ПОЛ ЭЛЕКТРИЧЕСКИЙ</a></li>
+									</ul>
+								</li>
+
+								<li class="darkblue drop">
+									<a href="#">
+										<div class="img_block_menu">
+											<img src="img/header/menu02.jpg" alt="" class="hidden-xs hidden-sm">
+											<img src="img/lm_02.jpg" alt="" class="hidden-lg hidden-md">
+										</div>
+										<p>водоснабжение</p>
+									</a>
+								</li>
+								<li class="blue">
+									<a href="#">
+										<div class="img_block_menu">
+											<img src="img/header/menu03.jpg" alt="" class="hidden-xs hidden-sm">
+											<img src="img/lm_03.jpg" alt="" class="hidden-lg hidden-md">
+										</div>
+										<p>канализация</p>
+									</a>
+								</li>
+								<li class="purple">
+									<a href="#">
+										<div class="img_block_menu">
+											<img src="img/header/menu04.jpg" alt="" class="hidden-xs hidden-sm">
+											<img src="img/lm_04.jpg" alt="" class="hidden-lg hidden-md">
+										</div>
+										<p>крепеж</p>
+									</a>
+								</li>
+								<li class="yellow">
+									<a href="#">
+										<div class="img_block_menu">
+											<img src="img/header/menu05.jpg" alt="" class="hidden-xs hidden-sm">
+											<img src="img/lm_05.jpg" alt="" class="hidden-lg hidden-md">
+										</div>
+										<p>инструменты</p>
+									</a>
+								</li>
+								<li class="drkgreen">
+									<a href="#">
+										<div class="img_block_menu">
+											<img src="img/header/menu06.jpg" alt="" class="hidden-xs hidden-sm">
+											<img src="img/lm_06.jpg" alt="" class="hidden-lg hidden-md">
+										</div>
+										<p>сантехника</p>
+									</a>
+								</li>
+								<li class="green">
+									<a href="#">
+										<div class="img_block_menu">
+											<img src="img/header/menu07.jpg" alt="" class="hidden-xs hidden-sm">
+											<img src="img/lm_07.jpg" alt="" class="hidden-lg hidden-md">
+										</div>
+										<p>водоочистка <br> и водоподготовка</p>
+									</a>
+								</li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="header_bottom">
+				<div class="col-xs-12">
+					<div class="line_slider1">
+						<div class="brd_orange"></div>
+						<div class="brd_blue"></div>
+						<div class="brd_purple"></div>
+					</div>
+					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/header/slider1.jpg" alt="...">
+								<div class="carousel-caption">
+									<div class="sl_content">
+										<div class="batary">
+											Радиаторная батарея
+										</div>
+										<div class="price_batary">
+											<span class="pb_span">3350</span> <span>руб</span> + установка
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/header/slider1.jpg" alt="...">
+								<div class="carousel-caption">
+									<div class="sl_content">
+										<div class="batary">
+											Радиаторная батарея
+										</div>
+										<div class="price_batary">
+											<span class="pb_span">3350</span> <span>руб</span> + установка
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Controls -->
+						<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+							<span class="glyphicon left" aria-hidden="true"><img src="img/header/arrow_left.png" alt=""></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+							<span class="glyphicon right" aria-hidden="true"><img src="img/header/arrow_right.png" alt=""></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</header>
+<!--HEADER END-->
+	<!--block_fixed begin-->
+	<div class="block_fixed">
+		<div class="bf_call">
+			<div class="bf_call_img">
+				<a href="tel:2051340"><img src="img/phone-contact.png" alt=""></a>
+			</div>
+			<div class="bf__text"><a href="tel:2051340">Заказать звонок</a></div>
+		</div>
+		<div class="bf_question">
+			<div class="bf_question_img">
+				<a href="#"><img src="img/question-sign-in-circles.png" alt=""></a>
+			</div>
+			<div class="bf__text"><a href="#">задать вопрос</a></div>
+		</div>
+	</div>
+	<!--block_fixed END-->
+	<!--MAIN BEGIN-->
+	<main class="main">
+
+		<!--aside BEGIN-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<aside class="hidden-xs hidden-sm left_block oplata_left_block">
+						<div class="lb_menu">
+							<ul class="nav navbar-nav">
+							<li class="orange drop">
+								<a href="javascript:void(0);">
+									отопление
+								</a>
+								<ul class="menu_orange">
+									<li class="menu_orange_li"><a href="javascript:void(0);">насосы для отопления</a>
+										<ul class="menu_orange_accordion">
+											<li class="mo_accord_li"><a href="vitrina.html" target="_blank">Принадлежности</a></li>
+											<li class="mo_accord_li"><a href="card.html" target="_blank">Alpha</a></li>
+											<li class="mo_accord_li"><a href="#">Magna</a></li>
+											<li class="mo_accord_li"><a href="#">Ups</a></li>
+											<li class="mo_accord_li"><a href="#">Up</a></li>
+										</ul>
+									</li>
+									<li class="menu_orange_li"><a href="#">радиаторы</a>
+										<ul class="menu_orange_accordion">
+											<li class="mo_accord_li"><a href="#">Принадлежности</a></li>
+											<li class="mo_accord_li"><a href="#">Alpha</a></li>
+											<li class="mo_accord_li"><a href="#">Magna</a></li>
+											<li class="mo_accord_li"><a href="#">Ups</a></li>
+											<li class="mo_accord_li"><a href="#">Up</a></li>
+										</ul>
+									</li>
+									<li class="menu_orange_li"><a href="#">котельное оборудование</a></li>
+									<li class="menu_orange_li"><a href="#">конвекторы</a></li>
+									<li class="menu_orange_li"><a href="#">МЕМБРАННЫЕ БАКИ ДЛЯ СИСТЕМ ВОДОСНАБЖЕНИЯ И ОТОПЛЕНИЯ</a></li>
+									<li class="menu_orange_li"><a href="#">СТАБИЛИЗАТОРЫ НАПРЯЖЕНИЯ</a></li>
+									<li class="menu_orange_li"><a href="#">БОЙЛЕРЫ КОСВЕННОГО НАГРЕВА</a></li>
+									<li class="menu_orange_li"><a href="#">ТЕПЛОВЫЕ ПУШКИ</a></li>
+									<li class="menu_orange_li"><a href="#">ТЕПЛОНОСИТЕЛЬ</a></li>
+									<li class="menu_orange_li"><a href="#">ИНФРАКРАСНЫЕ ОБОГРЕВАТЕЛИ</a></li>
+									<li class="menu_orange_li"><a href="#">ТЕПЛЫЙ ПОЛ ЭЛЕКТРИЧЕСКИЙ</a></li>
+								</ul>
+							</li>
+
+							<li class="darkblue drop">
+								<a href="javascript:void(0);">
+									водоснабжение
+								</a>
+							</li>
+							<li class="blue">
+								<a href="#">
+									канализация
+								</a>
+							</li>
+							<li class="purple">
+								<a href="#">
+									крепеж
+								</a>
+							</li>
+							<li class="yellow">
+								<a href="#">
+									инструменты
+								</a>
+							</li>
+							<li class="drkgreen">
+								<a href="#">
+									сантехника
+								</a>
+							</li>
+							<li class="green mt01">
+								<a href="#">
+									водоочистка <br> и водоподготовка
+								</a>
+							</li>
+						</ul></div><!-- /.navbar-collapse -->
+					</aside>
+				</div>
+				<!--content BEGIN-->
+				<div class="col-md-9">
+					<div class="basket_content">
+						<h5>корзина</h5>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="basket_block">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="b_number">
+												<p>В корзине <span>3</span>товара</p>
+											</div>
+											<div class="b_back_to_choice">
+												<a href="#">Продолжить выбор товара<i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12 ">
+											<div class="table-container">
+												<table class="table">
+												<tbody>
+													<tr>
+														<td>
+															<a href="#">
+																<img class="img-responsive" src="img/card_sl_01.jpg">
+															</a>
+														</td>
+														<td>
+															<p>
+																<a href="#">
+																	Насосная станция Grundfos MQ 3-35
+																</a>
+															</p>
+														</td>
+														<td>
+															<select class="form-control">
+																<option value="1" selected="">1 шт</option>
+																<option value="2">2 шт</option>
+																<option value="3">3 шт</option>
+																<option value="4">4 шт</option>
+																<option value="5">5 шт</option>
+															</select>
+														</td>
+														<td>
+															  <span class="price">
+																  <span class="price">ЦЕНА 20710
+																	<span><i class="fa fa-rub"></i></span>
+																  </span>
+															  </span>
+														</td>
+														<td>
+															<a title="Удалить" class="basc_del" href="#">x</a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<a href="#">
+																<img class="img-responsive" src="img/card_sl_01.jpg">
+															</a>
+														</td>
+
+														<td>
+															<p>
+																<a href="#">
+																	Самовсасывающий насос Grundfos JP 5
+																</a>
+															</p>
+														</td>
+														<td>
+															<select class="form-control">
+																<option value="1" selected="">1 шт</option>
+																<option value="2">2 шт</option>
+																<option value="3">3 шт</option>
+																<option value="4">4 шт</option>
+																<option value="5">5 шт</option>
+															</select>
+														</td>
+														<td>
+							  								<span class="price">
+																<span class="price">ЦЕНА 15105
+																	<span><i class="fa fa-rub"></i></span></span>
+															</span>
+														</td>
+														<td>
+															<a title="Удалить" href="#" class="basc_del">x</a>
+														</td>
+													</tr>
+													<tr>
+														<td>
+															<a href="#">
+																<img src="img/card_sl_01.jpg">
+															</a>
+														</td>
+														<td>
+															<p>
+																<a href="#">
+																	Самовсасывающий насос Grundfos JP 6
+																</a>
+															</p>
+														</td>
+														<td>
+															<select class="form-control">
+																<option value="1" selected="">1 шт</option>
+																<option value="2">2 шт</option>
+																<option value="3">3 шт</option>
+																<option value="4">4 шт</option>
+																<option value="5">5 шт</option>
+															</select>
+														</td>
+														<td>
+							  								<span class="price">
+															  <span class="price">ЦЕНА 18991
+																<span><i class="fa fa-rub"></i></span></span>
+														  </span>
+														</td>
+														<td>
+															<a title="Удалить" href="#" class="basc_del">x</a>
+														</td>
+													</tr>
+
+													<tr>
+														<td colspan="6" class="b_td_end">
+															<div class="hidden-xs hidden-sm">
+																Всего товаров <span>3</span> на сумму <span>54 806</span> &nbsp;<i class="fa fa-rub"></i>
+															</div>
+															<div style="font-size:12px;" class="hidden-lg hidden-md">
+																Всего товаров 3 на сумму 54 806
+																&nbsp;<i class="fa fa-rub"></i>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											</div>
+										</div>
+									</div>
+									<!--<div class="row">-->
+											<!--<div class="backet_info">-->
+
+												<!--<div class="v_check_list">-->
+													<!--<ul class="list-unstyled vcl_ul_brand">-->
+														<!--<li>-->
+															<!--<div class="checkbox">-->
+																<!--<label>-->
+																	<!--<input type="checkbox" value="" class="checkbox_inp" name="checkbox-test">-->
+																	<!--<span class="checkbox-custom"></span>-->
+																	<!--<span class="label"> СМС-уведомления</span>-->
+																<!--</label>-->
+															<!--</div>-->
+														<!--</li>-->
+														<!--<li>-->
+															<!--<div class="checkbox">-->
+																<!--<label>-->
+																	<!--<input type="checkbox" value="" class="checkbox_inp" name="checkbox-test">-->
+																	<!--<span class="checkbox-custom"></span>-->
+																	<!--<span class="label">E-mail уведомления</span>-->
+																<!--</label>-->
+															<!--</div>-->
+														<!--</li>-->
+													<!--</ul>-->
+												<!--</div>-->
+												<!--<div class="row">-->
+													<!--<div class="u_skidka">-->
+														<!--Ваша скидка составляет: <span class="percent">0%</span>-->
+														<!--<a href="#">Как увеличить?</a>-->
+													<!--</div>-->
+												<!--</div>-->
+												<!--<div class="row">-->
+													<!--<div class="u_skidka">-->
+														<!--<p>Ваша скидка:</p>-->
+														<!--<span class="percent_begin">0%</span>-->
+														<!--<span class="percent_end">1%</span>-->
+														<!--<div class="progress">-->
+															<!--<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em;">-->
+																<!--0%-->
+															<!--</div>-->
+														<!--</div>-->
+														<!--<p class="u_p_summ">Сумма покупки за год: <strong>0 руб.</strong></p>-->
+														<!--<div class="row u_skidka_bottom">-->
+															<!--<div class="u_recomend">-->
+																<!--<span>Для увеличения скидки</span>-->
+																<!--осталось закупить на: <strong>0 руб.</strong>-->
+															<!--</div>-->
+														<!--</div>-->
+													<!--</div>-->
+												<!--</div>-->
+											<!--</div>-->
+									<!--</div>-->
+								</div>
+							</div>
+						</div>
+						<h5 class="black">Доставка</h5>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="b_delivery_content">
+									<div class="v_check_list">
+										<ul class="list-unstyled b_ul_delivery">
+											<li>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="" class="checkbox_inp" name="checkbox-test">
+														<span class="checkbox-custom"></span>
+														<span class="label">
+													    Я - юридическое лицо
+                                                    </span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="" class="checkbox_inp" name="checkbox-test">
+														<span class="checkbox-custom"></span>
+														<span class="label">
+                                                        В пункте выдачи товара
+															<select class="form-control">
+																<option selected>г. Самара, ул. Арцыбушевская, д. 40 (магазин СамараМеталлоПласт)</option>
+																<option>г. Самара, ул. Московское шоссе, д. 306а (магазин СамараМеталлоПласт)</option>
+																<option>г. Самара, ул. Запорожская, д. 19 (магазин СамараМеталлоПласт)</option>
+															</select>
+                                                    </span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="" class="checkbox_inp" name="checkbox-test">
+														<span class="checkbox-custom"></span>
+														<span class="label">
+                                                        Курьерская доставка
+															<select class="form-control">
+																<option selected>Промышленный район(бесплатно)</option>
+																<option>Кировский район(бесплатно)</option>
+																<option>Октябрьский район(бесплатно)</option>
+																<option>Пункт 4</option>
+																<option>Пункт 5</option>
+																<option>Пункт 6</option>
+																<option>Октябрьский район(бесплатно)</option>
+															</select>
+															<span class="b_quest">?</span>
+															<div class="b_delivery_date" style="display: block;">
+																<div class="">
+																  <span>Дата и время доставки</span>
+																  <input type="text">
+																</div>
+																<div class="">
+																  <span>Адрес доставки</span>
+																  <input class="form-control address_kurier" placeholder="Адрес доставки">
+																</div>
+															</div>
+															<p>
+																<span>Доставка в пределах города Самара осуществляется
+																	при любой сумме заказа в течении
+																<strong>1 дня.</strong></span>
+                       											<span>Доставка осуществляется <strong>до подъезда клиента или до шлагбаума.</strong></span>
+																<span>Погрузочно–разгрузочные работы и подъем на этаж не осуществляются.</span>
+																<span class="blue">Доставка не осуществляется в выходные и праздничные дни.</span>
+                      										</p>
+                                                    	</span>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" value="" class="checkbox_inp" name="checkbox-test">
+														<span class="checkbox-custom"></span>
+														<span class="label">
+                                                        Экспресс-доставка
+														<p>Экспресс-доставка в пределах города Самара осуществляется в течении 1 часа?.</p>
+														<p>Стоимость 500<strong><i class="fa fa-rub"></i></strong></p>
+                                                    </span>
+													</label>
+												</div>
+											</li>
+										</ul>
+										<div style="margin-left: 15px; margin-top: 11px;" class="row">
+											<p>При оплате картой доставка производится на 1-2-й день с момента зачисления денег на наш счет.
+												Товар доставляется в рабочие дни с 09-00 до 17-00. При получении товара у представителя
+												юридического лица должна быть доверенность с печатью от компании-плательщика или сама печать.
+											</p>
+											<p>Частные покупатели для получения товара должны предъявить паспорт владельца карты.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="b_delivery_content_1">
+									<p class="bdc_data"> <strong>Данные получателя</strong></p>
+									<div class="form cart_form">
+										<div class="form-group">
+											<input name="name" type="text" class="form-control" placeholder="Ваше имя">
+										</div>
+										<div class="form-group">
+											<input name="email" type="text" class="form-control" placeholder="Email">
+										</div>
+										<div class="form-group">
+											<input name="phone" type="text" class="form-control" placeholder="Телефон">
+										</div>
+
+										<div class="form-group">
+											<textarea name="comment" placeholder="Коментарий к заказу" class="form-control"></textarea>
+										</div>
+										<div class="captcha">
+											<img src="img/captcha.JPG" alt="">
+										</div>
+										<input placeholder="Введите число с картинки" class="inp_captcha form-control" type="text">
+										<input type="button" class="button btn btn-primary" value="Продолжить">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--content end-->
+			</div>
+		</div>
+		<!--aside end-->
+
+	</main>
+	<!--MAIN END-->
+
+<!--FOOTER BEGIN-->
+<footer class="footer">
+	<div class="footer_content">
+		<div class="container">
+			<div class="row">
+				<div class="footer_menu_left">
+					<div class="col-lg-12">
+						<ul class="fml_ul_1">
+							<li><a href="#">Самара Металло Пласт</a> </li>
+							<li><a href="#">Каталог (PDF)</a></li>
+							<li class="li_back_call"><a href="tel:2051340">Обратный звонок</a></li>
+
+						</ul>
+						<ul class="fml_ul_2">
+							<li><a href="oplata.html" target="_blank">Оплата</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<ul class="fml_ul_3">
+							<li><a href="#">Доставка и пункты
+							                выдачи товара</a></li>
+							<li><a href="#">Котельный центр</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_menu_right">
+					<div class="col-lg-12">
+						<ul class="fmr_ul_1">
+							<li><a href="#">Обмен и возврат</a></li>
+							<li><a href="#">Гарантия</a></li>
+							<li><a href="#">Монтаж</a></li>
+						</ul>
+						<ul class="fmr_ul_2">
+							<li><a href="#">Сервисные центры</a></li>
+							<li><a href="#">О проекте</a></li>
+						</ul>
+						<div class="banners_block">
+							<div class="fmr_banner_1">
+								<a href="#"><img src="img/banner01.png" alt=""></a>
+							</div>
+							<div class="fmr_banner_2">
+								<a href="#"><img src="img/banner02.png" alt=""></a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="footer_bottom">
+					<div class="col-sm-9 col-md-10 col-lg-10">
+						<div>Теплохот ™ - торговая марка компании СамараМеталлоПласт. © 1997-2016 Карта сайта</div>
+						<div>Интернет-магазин Теплохот г. Самара, ул. Арцыбушевская 40 Телефон: 205-13-40</div>
+					</div>
+					<div class="col-sm-3 col-md-2">
+						<div class="logo_footer">
+							<a href="#"><img src="img/logo_footer.png" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--FOOTER END-->
+	<div id = "toTop" >Наверх</div>
+	<script src="js/jquery.min.js"></script><!-- Jquery Library -->
+	<script src="js/bootstrap.min.js"></script><!-- Bootstrap Library -->
+	<script src="js/bootstrap-slider.min.js"></script>
+	<!--<script src="js/jquery.mobile-1.4.5.min.js"></script>-->
+	<!--<script src="js/jquery.mobile.custom.min.js"></script>-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="js/app.js"></script><!-- Custom Library -->
+	<script type="text/javascript"></script>
+</body>
+</html>
