@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Site</title>
+
+	<meta name="description" content="Title" /><!-- Description of the page -->
+	<meta name="author" content="Grebenyuk Viktor"><!-- Author Name -->
+
+	<link rel="stylesheet" href="css/bootstrap.min.css"><!-- Bootstrap Style -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css"><!-- Custom Style -->
+	<link rel="stylesheet" href="css/font-awesome.min.css"><!-- Custom Style -->
+	<link rel="stylesheet" href="css/style.css"><!-- Custom Style -->
+
+</head>
+<body>
+	<!--header begin-->
+	<header class="header no_bg">
+		<div class="line">
+			<div class="container">
+				<div class="row">
+					<div class="logo asp_margin">
+						<img src="img/LOGO.png" alt="">
+					</div>
+					<nav class="navbar navbar-default asp_navbar_h" role="navigation">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse navbar-ex1-collapse">
+							<ul class="nav navbar-nav">
+								<li class="active"><a href="#">Создать задание</a></li>
+								<li><a href="#">Все задания</a></li>
+								<li><a href="#">Все исполнители</a></li>
+							</ul>
+						</div><!-- /.navbar-collapse -->
+					</nav>
+					<div class="login asp_mt">
+						<a href="#"><span><img src="img/ico-user.png" alt=""></span>Регистрация</a>
+						<a href="#"><span><img src="img/ico-lock.png" alt=""></span>Вход</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--HEADER END-->
+
+	<!--MAIN BEGIN-->
+	<main class="main">
+
+		<!--SECTION 1 BEGIN-->
+		<div class="all_assigm_page profile_page add_task_page">
+			<div class="container">
+				<div class="col-md-12">
+					<div class="steps_block">
+						<div class="step">
+							<div class="step_img">
+								<img src="img/task_01.png" alt="">
+							</div>
+							<div class="step_txt">
+								Создайте задание
+							</div>
+						</div>
+						<div class="arr">
+
+						</div>
+						<div class="step">
+							<div class="step_img">
+								<img src="img/task_02.png" alt="">
+							</div>
+							<div class="step_txt">
+								Исполнители предложат вам
+								свои услуги и цены
+							</div>
+						</div>
+						<div class="arr">
+
+						</div>
+						<div class="step">
+							<div class="step_img">
+								<img src="img/task_03.png" alt="">
+							</div>
+							<div class="step_txt">
+								Выберите лучшее
+								предложение
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-9">
+					<div class="add_task">
+						<form action="" method="post" role="form">
+							<div class="row">
+								<div class="col-xs-12">
+									<div class="form-group">
+										<label for="inp_01">Мне нужно</label>
+										<input type="text" class="form-control" name="" id="inp_01" placeholder="Краткое описание задания">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<div class="new-select-style-wpandyou">
+											<select class="form-control">
+												<option>Повар</option>
+												<option>Повар 1</option>
+												<option>Повар 2</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<div class="new-select-style-wpandyou">
+											<select class="form-control">
+												<option>На мероприятие</option>
+												<option>На мероприятие 1</option>
+												<option>На мероприятие 2</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="textarea">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="form-group">
+											<label for="textarea_01">Опишите пожелания и детали, чтобы исполнители лучше оценили вашу задачу</label>
+											<textarea name="" id="textarea_01" class="form-control" cols="30" rows="10" placeholder="Например, приготовить на  свадьбу из 20 гостей"></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="address">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="form-group">
+											<label for="inp_02">Адрес</label>
+											<input type="text" class="form-control" name="" id="inp_02" placeholder="Улица, дом, строение, корпус">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="job_budget">
+								<div class="row">
+									<div class="col-xs-10 col-sm-4">
+										<div class="form-group">
+											<label for="inp_03">Бюджет задания</label>
+											<input type="text" class="form-control" name="" id="inp_03"> <span>P</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="your_contact">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="inp_04">
+												Ваши контакты
+											</label>
+											<input type="text" class="form-control" name="" id="inp_04" placeholder="Имя, Фамилия">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group">
+											<label for="inp_05">&nbsp;
+											</label>
+											<input type="email" class="form-control" name="" id="inp_05" placeholder="Email">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group">
+											<div class="new-select-style">
+												<select class="form-control">
+													<option>+7</option>
+													<option>+3</option>
+													<option>+5</option>
+												</select>
+											</div>
+											<input type="text" class="form-control" name="" id="inp_06" placeholder="Ваш телефон">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="checkbox">
+								<input id="check1" type="checkbox" name="check" value="check1">
+								<label for="check1">Я согласен с <a href="#"> правилами сайта</a></label>
+
+							</div>
+							<button type="button" class="btn btn_public">Опубликовать</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-3">
+					<div class="quest_block">
+						<h5>Частые вопросы</h5>
+						<ul>
+							<li><a href="#">Сколько предложений я получу?</a></li>
+							<li><a href="#">Обязательно выбирать исполнителя?</a></li>
+							<li><a href="#">Зачем мне указывать примерный бюджет задания</a></li>
+							<li><a href="#">Как тут все работает?</a></li>
+							<li><a href="#">Как уберечься от мошенников?</a></li>
+							<li><a href="#">Какие гарантии от сайта?</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--SECTION 1 END-->
+
+
+	</main>
+	<!--MAIN END-->
+
+	<!--FOOTER BEGIN-->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<div class="logo">
+						<img src="img/LOGO2.png" alt="">
+						<p><span class="fa fa-copyright"></span> HAVEJOB.RU, 2017</p>
+					</div>
+					<ul>
+						<li><a href="#">Помощь в подборе</a></li>
+						<li><a href="#">Все услуги</a></li>
+						<li><a href="#">Все товары</a></li>
+						<li><a href="#">История заказов</a></li>
+						<li><a href="#">Условия использования</a></li>
+						<li><a href="#">Моильная версия</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Блог</a></li>
+					</ul>
+				</div>
+				<div class="col-md-5">
+					<div class="tel">
+						<a href="tel:"> <span class="fa fa-phone"></span>8 945 234 56 78 </a>
+					</div>
+					<div class="soc">
+						<a href="#"> <i class=" fa fa-facebook"></i> </a>
+						<a href="#"> <i class=" fa fa-twitter"></i> </a>
+						<a href="#"> <i class=" fa fa-linkedin"></i> </a>
+						<a href="#"> <i class=" fa fa-pinterest-p"></i> </a>
+					</div>
+					<div class="store">
+						<a href="#"><img src="img/APP.png" alt=""></a>
+						<a href="#"><img src="img/Googl.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--FOOTER END-->
+
+<script src="js/jquery.min.js"></script><!-- Jquery Library -->
+<script src="js/bootstrap.min.js"></script><!-- Bootstrap Library -->
+<script src="js/owl.carousel.min.js"></script><!-- Bootstrap Library -->
+<script src="js/app.js"></script><!-- Custom Library -->
+</body>
+</html>
